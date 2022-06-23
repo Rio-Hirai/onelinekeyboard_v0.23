@@ -44,3 +44,12 @@ The following packages were 追加済:
 The following packages were 更新済:
   com.unity.collab-proxy をバージョン 1.13.5 から 1.15.17 へ
   com.unity.timeline をバージョン 1.6.2 から 1.6.4 へ
+
+=== Thu Jun 23 22:23:45 2022
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were 更新済:
+  com.unity.collab-proxy をバージョン 1.15.17 から 1.15.18 へ
+  com.unity.timeline をバージョン 1.6.4 から 1.7.1 へ
