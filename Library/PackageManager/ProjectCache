@@ -20,7 +20,7 @@ m_EmbeddedPackageManifests:
 m_LocalPackages:
   m_LocalFileStatus: []
 m_ProjectPath: F:/WORKSPACE_SSD/onelinekeyboard_v22/Packages
-m_EditorVersion: 2022.1.5f1 (feea5ec8f162)
+m_EditorVersion: 2022.1.7f1 (240f4c1f462c)
 m_ResolvedPackages:
 - packageId: com.unity.collab-proxy@1.15.18
   testable: 0
@@ -93,6 +93,7 @@ m_ResolvedPackages:
     - 1.15.17
     - 1.15.18
     - 1.17.0
+    - 1.17.1
     - 2.0.0-preview.6
     - 2.0.0-preview.8
     - 2.0.0-preview.15
@@ -106,6 +107,7 @@ m_ResolvedPackages:
     compatible:
     - 1.15.18
     - 1.17.0
+    - 1.17.1
     - 2.0.0-preview.6
     - 2.0.0-preview.8
     - 2.0.0-preview.15

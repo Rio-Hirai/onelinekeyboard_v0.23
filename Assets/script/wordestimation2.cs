@@ -105,7 +105,7 @@ public class wordestimation2 : MonoBehaviour
             }
             else if (Input.GetKeyDown(KeyCode.Space))
             {
-                specialinput(" ");
+                specialinput("_");
             }
             else
             {
@@ -163,7 +163,7 @@ public class wordestimation2 : MonoBehaviour
 
         if (input == "q" || input == "a" || input == "z")
         {
-            key_num = "1";
+            key_num = "2";
         }
         else if (input == "w" || input == "s" || input == "x")
         {
@@ -191,7 +191,7 @@ public class wordestimation2 : MonoBehaviour
         }
         else if (input == "p")
         {
-            key_num = "8";
+            key_num = "7";
         }
 
         if (input == "1")
@@ -239,7 +239,7 @@ public class wordestimation2 : MonoBehaviour
 
         if (input_sentence != null && input_sentence.Length > 0)
         {
-            num = input_sentence.Substring(0, input_sentence.Length - 1).IndexOf(" ");
+            num = input_sentence.Substring(0, input_sentence.Length - 1).IndexOf("_");
         }
 
         while (num > 0)
@@ -266,7 +266,7 @@ public class wordestimation2 : MonoBehaviour
         input_keys = "";
         input_sentence_tmp = input_sentence + schar;
         cursor = 0;
-        firstupper();
+        //firstupper();
     }
 
     private void firstupper()
