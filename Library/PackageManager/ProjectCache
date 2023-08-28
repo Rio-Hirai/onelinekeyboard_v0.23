@@ -5,22 +5,36 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< Updated upstream
       ticks: 638282544828897487
     m_Hash: 2274361898
+=======
+      ticks: 638259249416432108
+    m_Hash: 2945596305
+>>>>>>> Stashed changes
   m_LockFileStatus:
     m_FilePath: C:/Users/riong/VR_projects/onelinekeyboard_v22/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< Updated upstream
       ticks: 638282544828897487
     m_Hash: 3004093415
+=======
+      ticks: 638259249416487637
+    m_Hash: 2038602938
+>>>>>>> Stashed changes
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
 m_ProjectPath: C:/Users/riong/VR_projects/onelinekeyboard_v22/Packages
+<<<<<<< Updated upstream
 m_EditorVersion: 2023.1.10f1 (661833f8c66c)
+=======
+m_EditorVersion: 2023.1.3f1 (e00e24c187a5)
+>>>>>>> Stashed changes
 m_ResolvedPackages:
 - packageId: com.unity.ai.navigation@1.1.4
   testable: 0
@@ -99,12 +113,21 @@ m_ResolvedPackages:
     for the new properties that were made available in 1.1.0"}'
   assetStore:
     productId: 
+<<<<<<< Updated upstream
 - packageId: com.unity.collab-proxy@2.0.7
   testable: 0
   isDirectDependency: 1
   version: 2.0.7
   source: 1
   resolvedPath: C:\Users\riong\VR_projects\onelinekeyboard_v22\Library\PackageCache\com.unity.collab-proxy@2.0.7
+=======
+- packageId: com.unity.collab-proxy@2.0.5
+  testable: 0
+  isDirectDependency: 1
+  version: 2.0.5
+  source: 1
+  resolvedPath: C:\Users\riong\VR_projects\onelinekeyboard_v22\Library\PackageCache\com.unity.collab-proxy@2.0.5
+>>>>>>> Stashed changes
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Version Control
@@ -185,16 +208,27 @@ m_ResolvedPackages:
     - 2.0.3
     - 2.0.4
     - 2.0.5
+<<<<<<< Updated upstream
     - 2.0.7
+=======
+>>>>>>> Stashed changes
     - 2.1.0-preview.3
     - 2.1.0-preview.5
     - 2.1.0-preview.6
     compatible:
+<<<<<<< Updated upstream
     - 2.0.7
     - 2.1.0-preview.3
     - 2.1.0-preview.5
     - 2.1.0-preview.6
     recommended: 2.0.7
+=======
+    - 2.0.5
+    - 2.1.0-preview.3
+    - 2.1.0-preview.5
+    - 2.1.0-preview.6
+    recommended: 2.0.5
+>>>>>>> Stashed changes
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -225,16 +259,27 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
+<<<<<<< Updated upstream
   datePublishedTicks: 638264754080000000
+=======
+  datePublishedTicks: 638218079810000000
+>>>>>>> Stashed changes
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.collab-proxy@2.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
+<<<<<<< Updated upstream
     revision: 13a0e74f47307a1b20a57747cea59891ce36a647
     path: 
   unityLifecycle:
     version: 2.0.7
+=======
+    revision: 7f68049e8cae5b51ad0d17cc01b8c6e802bf3866
+    path: 
+  unityLifecycle:
+    version: 2.0.5
+>>>>>>> Stashed changes
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -249,6 +294,7 @@ m_ResolvedPackages:
     Version Control to get started!\nIf you have previously used the Unity Asset
     Store Plastic SCM plug-in, you can now simply use this package. Make sure you
     delete the plug-in from your project.\nRemoving a previously added Plastic SCM
+<<<<<<< Updated upstream
     Asset Store Plug-In:\n\n- Select the PlasticSCM folder in the Assets\\Plugins
     folder on the Project tab, then click Edit > Delete\n- Close the Unity Editor
     and open your project again. You will find the Plastic SCM menu item in the Window
@@ -256,6 +302,12 @@ m_ResolvedPackages:
     Editor Toolbar on domain reload.\n- Fixed the popup stating \"An existing checkout
     operation has locked the workspace\" when trying to check in a scene with unsaved
     changes."}'
+=======
+    Asset Store Plug-In:\n- Select the PlasticSCM folder in the Assets\\Plugins folder
+    on the Project tab, then click Edit > Delete\n- Close the Unity Editor and open
+    your project again. You will find the Plastic SCM menu item in the Window menu.\n\n###
+    Fixed\n- Fixed remaining references to ''Plastic SCM'' in localized labels."}'
+>>>>>>> Stashed changes
   assetStore:
     productId: 
 - packageId: com.unity.feature.development@1.0.2
@@ -301,9 +353,15 @@ m_ResolvedPackages:
     version: default
   resolvedDependencies:
   - name: com.unity.ide.visualstudio
+<<<<<<< Updated upstream
     version: 2.0.20
   - name: com.unity.test-framework
     version: 1.3.8
+=======
+    version: 2.0.18
+  - name: com.unity.test-framework
+    version: 1.3.7
+>>>>>>> Stashed changes
   - name: com.unity.ext.nunit
     version: 2.0.3
   - name: com.unity.modules.imgui
@@ -461,12 +519,21 @@ m_ResolvedPackages:
     Improve UnitTesting support\n - support JetBrains Toolbox App 2.0"}'
   assetStore:
     productId: 
+<<<<<<< Updated upstream
 - packageId: com.unity.ide.visualstudio@2.0.20
   testable: 0
   isDirectDependency: 1
   version: 2.0.20
   source: 1
   resolvedPath: C:\Users\riong\VR_projects\onelinekeyboard_v22\Library\PackageCache\com.unity.ide.visualstudio@2.0.20
+=======
+- packageId: com.unity.ide.visualstudio@2.0.18
+  testable: 0
+  isDirectDependency: 1
+  version: 2.0.18
+  source: 1
+  resolvedPath: C:\Users\riong\VR_projects\onelinekeyboard_v22\Library\PackageCache\com.unity.ide.visualstudio@2.0.18
+>>>>>>> Stashed changes
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -475,7 +542,11 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
+<<<<<<< Updated upstream
   type: assets
+=======
+  type: asset
+>>>>>>> Stashed changes
   description: Code editor integration for supporting Visual Studio as code editor
     for unity. Adds support for generating csproj files for intellisense purposes,
     auto discovery of installations, etc.
@@ -504,18 +575,28 @@ m_ResolvedPackages:
     - 2.0.16
     - 2.0.17
     - 2.0.18
+<<<<<<< Updated upstream
     - 2.0.20
     compatible:
     - 2.0.18
     - 2.0.20
     recommended: 2.0.20
+=======
+    compatible:
+    - 2.0.18
+    recommended: 2.0.18
+>>>>>>> Stashed changes
     deprecated: []
   dependencies:
   - name: com.unity.test-framework
     version: 1.1.9
   resolvedDependencies:
   - name: com.unity.test-framework
+<<<<<<< Updated upstream
     version: 1.3.8
+=======
+    version: 1.3.7
+>>>>>>> Stashed changes
   - name: com.unity.ext.nunit
     version: 2.0.3
   - name: com.unity.modules.imgui
@@ -535,13 +616,21 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
+<<<<<<< Updated upstream
   datePublishedTicks: 638265007710000000
+=======
+  datePublishedTicks: 638173205920000000
+>>>>>>> Stashed changes
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.visualstudio@2.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
+<<<<<<< Updated upstream
     revision: b7bf23d23806ac75645bfa12acadcfc11468a383
+=======
+    revision: 9d3c07127cbe1916b8abbfd18f71fb8d9df8008c
+>>>>>>> Stashed changes
     path: 
   unityLifecycle:
     version: 2.0.18
@@ -554,6 +643,7 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
+<<<<<<< Updated upstream
   upmReserved: '{"changelog":"Integration:\n\n- Internal API refactoring."}'
   assetStore:
     productId: 
@@ -563,6 +653,126 @@ m_ResolvedPackages:
   version: 1.3.8
   source: 1
   resolvedPath: C:\Users\riong\VR_projects\onelinekeyboard_v22\Library\PackageCache\com.unity.test-framework@1.3.8
+=======
+  upmReserved: '{"changelog":"Integration:\n\n- Performance improvements with `EditorApplication.update`
+    callbacks.\n \nProject generation:\n\n- Add extra compiler options for analyzers
+    and source generators."}'
+  assetStore:
+    productId: 
+- packageId: com.unity.postprocessing@3.3.0
+  testable: 0
+  isDirectDependency: 1
+  version: 3.3.0
+  source: 1
+  resolvedPath: C:\Users\riong\VR_projects\onelinekeyboard_v22\Library\PackageCache\com.unity.postprocessing@3.3.0
+  assetPath: Packages/com.unity.postprocessing
+  name: com.unity.postprocessing
+  displayName: Post Processing
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: asset
+  description: The post-processing stack (v2) comes with a collection of effects
+    and image filters you can apply to your cameras to improve the visuals of your
+    games.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.1.7
+    - 0.1.8
+    - 2.0.0-beta
+    - 2.0.1-beta
+    - 2.0.2-preview
+    - 2.0.3-preview
+    - 2.0.5-preview
+    - 2.0.7-preview
+    - 2.0.8-preview
+    - 2.0.9-preview
+    - 2.0.10-preview
+    - 2.0.11-preview
+    - 2.0.12-preview
+    - 2.0.13-preview
+    - 2.0.14-preview
+    - 2.0.15-preview
+    - 2.0.16-preview
+    - 2.0.17-preview
+    - 2.1.0
+    - 2.1.1
+    - 2.1.2
+    - 2.1.3
+    - 2.1.4
+    - 2.1.5
+    - 2.1.6
+    - 2.1.7
+    - 2.2.1
+    - 2.2.2
+    - 2.3.0
+    - 3.0.1
+    - 3.0.3
+    - 3.1.0
+    - 3.1.1
+    - 3.2.0
+    - 3.2.1
+    - 3.2.2
+    - 3.3.0
+    compatible:
+    - 3.3.0
+    recommended: 3.3.0
+    deprecated: []
+  dependencies:
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638197390240000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.postprocessing@3.3/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/Graphics.git
+    revision: 28cd9b8713470614fe9a99cd6096069f2631a903
+    path: 
+  unityLifecycle:
+    version: 3.3.0
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Fixed\n- Fixed some post effects not scaling correctly
+    when dynamic resolution is enabled on a camera''s target texture (case 1166603)\n-
+    Fixed obsolete API call GetScriptingDefineSymbolsForGroup\n- Remove support for
+    OpenGL ES 2.0 in Unity 2023.1 or newer"}'
+  assetStore:
+    productId: 
+- packageId: com.unity.test-framework@1.3.7
+  testable: 0
+  isDirectDependency: 1
+  version: 1.3.7
+  source: 1
+  resolvedPath: C:\Users\riong\VR_projects\onelinekeyboard_v22\Library\PackageCache\com.unity.test-framework@1.3.7
+>>>>>>> Stashed changes
   assetPath: Packages/com.unity.test-framework
   name: com.unity.test-framework
   displayName: Test Framework
@@ -619,7 +829,10 @@ m_ResolvedPackages:
     - 1.3.5
     - 1.3.7
     - 1.3.8
+<<<<<<< Updated upstream
     - 1.3.9
+=======
+>>>>>>> Stashed changes
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -627,12 +840,19 @@ m_ResolvedPackages:
     compatible:
     - 1.3.7
     - 1.3.8
+<<<<<<< Updated upstream
     - 1.3.9
+=======
+>>>>>>> Stashed changes
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
     - 2.0.1-pre.18
+<<<<<<< Updated upstream
     recommended: 1.3.9
+=======
+    recommended: 1.3.8
+>>>>>>> Stashed changes
     deprecated: []
   dependencies:
   - name: com.unity.ext.nunit
@@ -663,13 +883,21 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
+<<<<<<< Updated upstream
   datePublishedTicks: 638245936380000000
+=======
+  datePublishedTicks: 638221794830000000
+>>>>>>> Stashed changes
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.test-framework@1.3/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.com/Unity-Technologies/com.unity.test-framework.git
+<<<<<<< Updated upstream
     revision: 3c71367fe3a376f1a5a60b775ad2d3fb862af3ac
+=======
+    revision: 468e2ea5f976e8dee4bb02a4e9714155745c941e
+>>>>>>> Stashed changes
     path: 
   unityLifecycle:
     version: 1.3.7
@@ -1173,10 +1401,15 @@ m_ResolvedPackages:
     - 1.7.8
     - 1.8.0-pre.1
     - 1.8.0
+<<<<<<< Updated upstream
     - 1.9.0
     compatible:
     - 1.8.0
     - 1.9.0
+=======
+    compatible:
+    - 1.8.0
+>>>>>>> Stashed changes
     recommended: 1.8.0
     deprecated:
     - 1.8.0-pre.1
@@ -3681,7 +3914,11 @@ m_ResolvedPackages:
     version: 1.0.1
   resolvedDependencies:
   - name: com.unity.test-framework
+<<<<<<< Updated upstream
     version: 1.3.8
+=======
+    version: 1.3.7
+>>>>>>> Stashed changes
   - name: com.unity.ext.nunit
     version: 2.0.3
   - name: com.unity.modules.imgui

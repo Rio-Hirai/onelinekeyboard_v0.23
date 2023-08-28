@@ -62,12 +62,34 @@ Update Mode: updateDependencies
 The following packages were 更新済:
   com.unity.collab-proxy をバージョン 1.15.18 から 1.17.1 へ
 
+<<<<<<< Updated upstream
 === Thu Aug 10 22:42:03 2023
+=======
+=== Mon Nov 14 14:23:23 2022
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were 更新済:
+  com.unity.ide.rider をバージョン 3.0.15 から 3.0.16 へ
+  com.unity.timeline をバージョン 1.7.1 から 1.7.2 へ
+
+=== Fri Nov 25 12:47:01 2022
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were 更新済:
+  com.unity.collab-proxy をバージョン 1.17.2 から 1.17.6 へ
+
+=== Wed Feb  8 13:19:34 2023
+>>>>>>> Stashed changes
 
 Packages were changed.
 Update Mode: updateDependencies
 
 The following packages were 追加済:
+<<<<<<< Updated upstream
   com.unity.ai.navigation@1.1.4
 The following packages were 更新済:
   com.unity.collab-proxy をバージョン 1.17.2 から 2.0.5 へ
@@ -77,3 +99,31 @@ The following packages were 更新済:
   com.unity.test-framework をバージョン 1.1.33 から 1.3.7 へ
   com.unity.timeline をバージョン 1.7.1 から 1.8.2 へ
   com.unity.visualscripting をバージョン 1.7.8 から 1.8.0 へ
+=======
+  com.unity.ai.navigation@1.1.1
+The following packages were 更新済:
+  com.unity.collab-proxy をバージョン 1.17.6 から 2.0.0 へ
+  com.unity.ide.rider をバージョン 3.0.16 から 3.0.18 へ
+  com.unity.ide.visualstudio をバージョン 2.0.16 から 2.0.17 へ
+  com.unity.visualscripting をバージョン 1.7.8 から 1.8.0 へ
+
+=== Thu Apr 27 07:13:01 2023
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were 更新済:
+  com.unity.collab-proxy をバージョン 2.0.0 から 2.0.3 へ
+  com.unity.timeline をバージョン 1.7.2 から 1.7.4 へ
+
+=== Tue Jun 20 07:51:36 2023
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were 更新済:
+  com.unity.feature.development をバージョン 1.0.1 から 1.0.2 へ
+  com.unity.ide.rider をバージョン 3.0.21 から 3.0.22 へ
+  com.unity.test-framework をバージョン 1.1.33 から 1.3.5 へ
+  com.unity.timeline をバージョン 1.7.4 から 1.8.2 へ
+>>>>>>> Stashed changes
