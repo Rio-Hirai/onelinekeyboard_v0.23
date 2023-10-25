@@ -1813,11 +1813,7 @@ Git 빠른 익스포트 데이터를 리포지토리로 임포트합니다.
     cm ^fileinfo proj_specs.docx --^fields=^ServerPath,^RevisionChangeset --^xml
     cm ^fileinfo samples.ogg --^format="{^ServerPath}[{^Owner}] -> {^Size}"
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.ko.txt
 == CMD_DESCRIPTION_FIND ==
-========
-== CMD_DESCRIPTION_FIND_QUERY ==
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.ko.txt
 SQL과 같은 쿼리를 실행하여 Unity VCS 객체를 찾습니다.
 
 == CMD_USAGE_FIND ==

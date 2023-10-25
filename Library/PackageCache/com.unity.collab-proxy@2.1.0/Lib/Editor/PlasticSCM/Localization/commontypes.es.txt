@@ -772,11 +772,7 @@ Su licencia de auto-renovación ha sido deshabilitada por un administrador. Por 
 No se puede utilizar una licencia {0} con una edición {1} de Plastic SCM.
 
 == ListLocksByRepNotSupported ==
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/commontypes.es.txt
 El servidor {0} no soporta listar locks por repositorio. Por favor, actualice el servidor para usar la funcionalidad de Smart Locks.
-========
-El servidor {0} no soporta listar locks por repositorio. Por favor, actualice el servidor.
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/commontypes.es.txt
 
 == LkNotFound ==
 No se puede encontrar un enlace de tipo {0}.
@@ -1086,14 +1082,10 @@ El diff con cambios locales no se puedo calcular porque algunos cambios locales 
 No tiene permisos para leer todo el contenido bajo la ruta '{0}' en el cs:{1}. La operación actual necesita leer el contenido completo para poder continuar. Por favor, revise sus permisos de path e inténtelo de nuevo más tarde.
 
 == PurgeCanOnlyBeExecutedByItsOwner ==
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/commontypes.es.txt
 Sólo el autor puede ejecutar la purga.
 
 == PurgeCanOnlyBeDeletedByItsOwner ==
 Sólo el autor y el administrador pueden borrar la purga.
-========
-Sólo el autor puede ejecutar su purge.
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/commontypes.es.txt
 
 == PushAllNotAllowedWithMissingData ==
 No se puede hacer push del repositorio, porque faltan datos en algunas ramas (que probablemente fueron replicadas con --nodata). Por favor, hidrate las ramas sin datos y vuelva a intentarlo (revise la ayuda de cm replicate hydrate).

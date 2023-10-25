@@ -89,3 +89,16 @@ The following packages were 更新済:
   com.unity.ide.rider をバージョン 3.0.24 から 3.0.25 へ
   com.unity.ide.visualstudio をバージョン 2.0.20 から 2.0.21 へ
   com.unity.test-framework をバージョン 1.3.8 から 1.3.9 へ
+
+=== Wed Oct 25 21:50:53 2023
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were 追加済:
+  com.unity.2d.sprite@1.0.0
+  com.unity.2d.tilemap@1.0.0
+  com.unity.ads@4.4.2
+  com.unity.analytics@3.8.1
+  com.unity.purchasing@4.9.3
+  com.unity.xr.legacyinputhelpers@2.1.10

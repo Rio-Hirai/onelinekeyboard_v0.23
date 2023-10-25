@@ -46,11 +46,7 @@ namespace Microsoft.Unity.VisualStudio.Editor
 		public string ProjectDirectory { get; }
 
 		// Use this to have the same newline ending on all platforms for consistency.
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.ide.visualstudio@2.0.20/Editor/ProjectGeneration/ProjectGeneration.cs
 		internal const string k_WindowsNewline = "\r\n";
-========
-		const string k_WindowsNewline = "\r\n";
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.ide.visualstudio@2.0.18/Editor/ProjectGeneration/ProjectGeneration.cs
 
 		const string m_SolutionProjectEntryTemplate = @"Project(""{{{0}}}"") = ""{1}"", ""{2}"", ""{{{3}}}""{4}EndProject";
 
@@ -555,17 +551,7 @@ namespace Microsoft.Unity.VisualStudio.Editor
 				projectBuilder.Append("  <ItemGroup>").Append(k_WindowsNewline);
 				foreach (var reference in assembly.assemblyReferences.Where(i => i.sourceFiles.Any(ShouldFileBePartOfSolution)))
 				{
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.ide.visualstudio@2.0.20/Editor/ProjectGeneration/ProjectGeneration.cs
 					AppendProjectReference(assembly, reference, projectBuilder);
-========
-					// If the current assembly is a Player project, we want to project-reference the corresponding Player project
-					var referenceName = m_AssemblyNameProvider.GetAssemblyName(assembly.outputPath, reference.name);
-
-					projectBuilder.Append(@"    <ProjectReference Include=""").Append(referenceName).Append(GetProjectExtension()).Append(@""">").Append(k_WindowsNewline);
-					projectBuilder.Append("      <Project>{").Append(ProjectGuid(referenceName)).Append("}</Project>").Append(k_WindowsNewline);
-					projectBuilder.Append("      <Name>").Append(referenceName).Append("</Name>").Append(k_WindowsNewline);
-					projectBuilder.Append("    </ProjectReference>").Append(k_WindowsNewline);
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.ide.visualstudio@2.0.18/Editor/ProjectGeneration/ProjectGeneration.cs
 				}
 
 				projectBuilder.Append(@"  </ItemGroup>").Append(k_WindowsNewline);
@@ -670,7 +656,6 @@ namespace Microsoft.Unity.VisualStudio.Editor
 			var additionalFilePaths = new List<string>();
 			var rulesetPath = string.Empty;
 			var analyzerConfigPath = string.Empty;
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.ide.visualstudio@2.0.20/Editor/ProjectGeneration/ProjectGeneration.cs
 			var compilerOptions = assembly.compilerOptions;
 
 #if UNITY_2020_2_OR_NEWER
@@ -690,18 +675,6 @@ namespace Microsoft.Unity.VisualStudio.Editor
 #elif UNITY_2022_2_OR_NEWER
 			additionalFilePaths.AddRange(compilerOptions.RoslynAdditionalFilePaths);
 			analyzerConfigPath = compilerOptions.AnalyzerConfigPath;
-========
-
-#if UNITY_2020_2_OR_NEWER
-			// Analyzers + ruleset provided by Unity
-			analyzers.AddRange(assembly.compilerOptions.RoslynAnalyzerDllPaths);
-			rulesetPath = assembly.compilerOptions.RoslynAnalyzerRulesetPath;
-#endif
-
-#if UNITY_2021_3_OR_NEWER && !UNITY_2022_1 // we have support in 2021.3, 2022.2 but without a backport in 2022.1
-			additionalFilePaths.AddRange(assembly.compilerOptions.RoslynAdditionalFilePaths);
-			analyzerConfigPath = assembly.compilerOptions.AnalyzerConfigPath;
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.ide.visualstudio@2.0.18/Editor/ProjectGeneration/ProjectGeneration.cs
 #endif
 
 			// Analyzers and additional files provided by csc.rsp
@@ -783,7 +756,6 @@ namespace Microsoft.Unity.VisualStudio.Editor
 			return ProjectType.Game;
 		}
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.ide.visualstudio@2.0.20/Editor/ProjectGeneration/ProjectGeneration.cs
 		internal virtual void GetProjectHeader(ProjectProperties properties, out StringBuilder headerBuilder)
 		{
 			headerBuilder = default;
@@ -791,32 +763,6 @@ namespace Microsoft.Unity.VisualStudio.Editor
 
 		internal static void GetProjectHeaderConfigurations(ProjectProperties properties, StringBuilder headerBuilder)
 		{
-========
-		private void GetProjectHeader(ProjectProperties properties, out StringBuilder headerBuilder)
-		{
-			headerBuilder = new StringBuilder();
-
-			//Header
-			headerBuilder.Append(@"<?xml version=""1.0"" encoding=""utf-8""?>").Append(k_WindowsNewline);
-			headerBuilder.Append(@"<Project ToolsVersion=""4.0"" DefaultTargets=""Build"" xmlns=""http://schemas.microsoft.com/developer/msbuild/2003"">").Append(k_WindowsNewline);
-			headerBuilder.Append(@"  <PropertyGroup>").Append(k_WindowsNewline);
-			headerBuilder.Append(@"    <LangVersion>").Append(properties.LangVersion).Append(@"</LangVersion>").Append(k_WindowsNewline);
-			headerBuilder.Append(@"  </PropertyGroup>").Append(k_WindowsNewline);
-			headerBuilder.Append(@"  <PropertyGroup>").Append(k_WindowsNewline);
-			headerBuilder.Append(@"    <Configuration Condition="" '$(Configuration)' == '' "">Debug</Configuration>").Append(k_WindowsNewline);
-			headerBuilder.Append(@"    <Platform Condition="" '$(Platform)' == '' "">AnyCPU</Platform>").Append(k_WindowsNewline);
-			headerBuilder.Append(@"    <ProductVersion>10.0.20506</ProductVersion>").Append(k_WindowsNewline);
-			headerBuilder.Append(@"    <SchemaVersion>2.0</SchemaVersion>").Append(k_WindowsNewline);
-			headerBuilder.Append(@"    <RootNamespace>").Append(properties.RootNamespace).Append(@"</RootNamespace>").Append(k_WindowsNewline);
-			headerBuilder.Append(@"    <ProjectGuid>{").Append(properties.ProjectGuid).Append(@"}</ProjectGuid>").Append(k_WindowsNewline);
-			headerBuilder.Append(@"    <OutputType>Library</OutputType>").Append(k_WindowsNewline);
-			headerBuilder.Append(@"    <AppDesignerFolder>Properties</AppDesignerFolder>").Append(k_WindowsNewline);
-			headerBuilder.Append(@"    <AssemblyName>").Append(properties.AssemblyName).Append(@"</AssemblyName>").Append(k_WindowsNewline);
-			headerBuilder.Append(@"    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>").Append(k_WindowsNewline);
-			headerBuilder.Append(@"    <FileAlignment>512</FileAlignment>").Append(k_WindowsNewline);
-			headerBuilder.Append(@"    <BaseDirectory>.</BaseDirectory>").Append(k_WindowsNewline);
-			headerBuilder.Append(@"  </PropertyGroup>").Append(k_WindowsNewline);
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.ide.visualstudio@2.0.18/Editor/ProjectGeneration/ProjectGeneration.cs
 			headerBuilder.Append(@"  <PropertyGroup Condition="" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "">").Append(k_WindowsNewline);
 			headerBuilder.Append(@"    <DebugSymbols>true</DebugSymbols>").Append(k_WindowsNewline);
 			headerBuilder.Append(@"    <DebugType>full</DebugType>").Append(k_WindowsNewline);
@@ -837,29 +783,7 @@ namespace Microsoft.Unity.VisualStudio.Editor
 			headerBuilder.Append(@"    <NoWarn>0169</NoWarn>").Append(k_WindowsNewline);
 			headerBuilder.Append(@"    <AllowUnsafeBlocks>").Append(properties.Unsafe).Append(@"</AllowUnsafeBlocks>").Append(k_WindowsNewline);
 			headerBuilder.Append(@"  </PropertyGroup>").Append(k_WindowsNewline);
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.ide.visualstudio@2.0.20/Editor/ProjectGeneration/ProjectGeneration.cs
 		}
-========
-
-			// Explicit references
-			headerBuilder.Append(@"  <PropertyGroup>").Append(k_WindowsNewline);
-			headerBuilder.Append(@"    <NoConfig>true</NoConfig>").Append(k_WindowsNewline);
-			headerBuilder.Append(@"    <NoStdLib>true</NoStdLib>").Append(k_WindowsNewline);
-			headerBuilder.Append(@"    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>").Append(k_WindowsNewline);
-			headerBuilder.Append(@"    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>").Append(k_WindowsNewline);
-			headerBuilder.Append(@"    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>").Append(k_WindowsNewline);
-			headerBuilder.Append(@"  </PropertyGroup>").Append(k_WindowsNewline);
-
-			// Flavoring
-			headerBuilder.Append(@"  <PropertyGroup>").Append(k_WindowsNewline);
-			headerBuilder.Append(@"    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>").Append(k_WindowsNewline);
-			headerBuilder.Append(@"    <UnityProjectGenerator>Package</UnityProjectGenerator>").Append(k_WindowsNewline);
-			headerBuilder.Append(@"    <UnityProjectGeneratorVersion>").Append(properties.FlavoringPackageVersion).Append(@"</UnityProjectGeneratorVersion>").Append(k_WindowsNewline);
-			headerBuilder.Append(@"    <UnityProjectType>").Append(properties.FlavoringProjectType).Append(@"</UnityProjectType>").Append(k_WindowsNewline);
-			headerBuilder.Append(@"    <UnityBuildTarget>").Append(properties.FlavoringBuildTarget).Append(@"</UnityBuildTarget>").Append(k_WindowsNewline);
-			headerBuilder.Append(@"    <UnityVersion>").Append(properties.FlavoringUnityVersion).Append(@"</UnityVersion>").Append(k_WindowsNewline);
-			headerBuilder.Append(@"  </PropertyGroup>").Append(k_WindowsNewline);
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.ide.visualstudio@2.0.18/Editor/ProjectGeneration/ProjectGeneration.cs
 
 		internal static void GetProjectHeaderAnalyzers(ProjectProperties properties, StringBuilder headerBuilder)
 		{

@@ -4,13 +4,8 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Editor/PlasticSCM/PlasticProjectSettingsProvider.cs
 using Codice.Client.Commands;
 using Codice.Client.Common.EventTracking;
-========
-using Codice.Client.BaseCommands.EventTracking;
-using Codice.Client.Commands;
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Editor/PlasticSCM/PlasticProjectSettingsProvider.cs
 using Codice.Client.Common.FsNodeReaders;
 using Codice.Client.Common.Threading;
 using Codice.CM.Common;

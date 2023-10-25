@@ -58,19 +58,11 @@ Remarks:
     (Use 'cm ^help ^objectspec' to learn how to specify objects.)
     The '^acl' command uses a special type of spec: secured paths.
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     Secured paths specs: ^path:server_path[#tag]
     Examples: 
     - ^path:/src/foo.c
     - ^path:/doc/pdf
     - ^path:/doc/pdf#documents
-========
-        Secured paths specs: ^path:server_path[#tag]
-        Examples: 
-            - ^path:/src/foo.c
-            - ^path:/doc/pdf
-            - ^path:/doc/pdf#documents
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     Permission action:
     Use -^allowed and -^denied to specify what permissions to set.
@@ -639,7 +631,6 @@ Groups pending changes in changelists.
 == CMD_USAGE_CHANGELIST ==
 Usage:
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     cm ^changelist | ^clist [--^symlink]
     (Displays all changelists.)
 
@@ -661,48 +652,17 @@ Usage:
     change(s) that match with the given path_name(s). Use a whitespace to 
     separate path_names. Use double quotes (" ") to specify paths containing
     spaces. The status of the paths must be '^Added' or '^Checked-out'.)
-========
-       cm ^changelist | ^clist [--^symlink]
-       (Displays all changelists.)
-
-       cm ^changelist | ^clist ^create <clist_name>
-          [<clist_desc>] [--^persistent | --^notpersistent] [--^symlink]
-       (Creates a changelist.)
-
-       cm ^changelist | ^clist ^delete <clist_name> [--^symlink]
-       (Deletes the selected changelist. If this changelist contains pending
-       changes, then these will be moved to the ^default changelist.)
-
-       cm ^changelist | ^clist ^edit <clist_name> [<action_name> <action_value>]
-                             [--^persistent | --^notpersistent] [--^symlink]
-       (Edits the selected changelist.)
-
-       cm ^changelist | ^clist <clist_name> (^add | ^rm) <path_name>[ ...]
-                             [--^symlink]
-       (Edits the selected changelist by adding ('^add') or removing ('^rm') the
-       change(s) that match with the given path_name(s). Use a whitespace to 
-       separate path_names. Use double quotes (" ") to specify paths containing
-       spaces. The status of the paths must be '^Added' or '^Checked-out'.)
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
 Options:
 
     clist_name          The name of the changelist. A path to a file containing 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
                        the name can be used instead. More info at --^namefile.
     clist_desc          The description of the changelist. A path to a file 
                        containing the description can be used instead. More 
                        info at --^descriptionfile.
-========
-                        the name can be used instead. More info at --^namefile.
-    clist_desc          The description of the changelist. A path to a file 
-                        containing the description can be used instead. More 
-                        info at --^descriptionfile.
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     action_name         Choose between '^rename' or '^description' to edit the 
                        changelist.
     action_value        Applies the new name or new description when editing
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
                        the changelist.
     --^persistent       The changelist will remain in the workspace even if its
                        contents are checked-in or reverted.
@@ -719,24 +679,6 @@ Options:
                        and its content cannot be neither empty nor multiline.
     --^descriptionfile  A valid path to a file containing the description for the 
                        changelist. Bear in mind the file must exist.
-========
-                        the changelist.
-    --^persistent        The changelist will remain in the workspace even if its
-                        contents are checked-in or reverted.
-    --^notpersistent     (Default) The changelist will not remain in the
-                        workspace even if its contents are checked-in or
-                        reverted.
-    --^symlink           Applies the operation to the symlink and not to the
-                        target.
-    --^namefile          A valid path to a file containing the name of the 
-                        changelist. Bear in mind the file must exist and its 
-                        content cannot be neither empty nor multiline.
-    --^newnamefile       A valid path to a file containing the new name of the 
-                        changelist when renaming. Bear in mind the file must exist 
-                        and its content cannot be neither empty nor multiline.
-    --^descriptionfile   A valid path to a file containing the description for the 
-                        changelist. Bear in mind the file must exist.
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
 == CMD_HELP_CHANGELIST ==
 Remarks:
@@ -1351,15 +1293,9 @@ Remarks:
 
     Output format parameters (--^format option):
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     This command accepts a format string to show the output.
 
     The output parameters of this command are the following:
-========
-        This command accepts a format string to show the output.
-	
-        The output parameters of this command are the following:
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     {0}  id
     {1}  guid
@@ -1631,13 +1567,8 @@ Remarks:
     The metrics are: number of changed, added, and deleted lines.
 
     Output format parameters (--^format option):
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     This command accepts a format string to show the output.
     The output parameters of this command are the following:
-========
-        This command accepts a format string to show the output.
-        The output parameters of this command are the following:
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     {0}  Number of changed lines.
     {1}  Number of added lines.
     {2}  Number of deleted lines.
@@ -1784,11 +1715,7 @@ Examples:
     to perform incremental imports later.)
 
     cm ^fast-import repo@server:8084 repo.fast-export --^import-marks=repo.marks \
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
         --^export-marks=repo.marks
-========
-      --^export-marks=repo.marks
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     (Imports the contents of the 'repo.fast-export' file. Only the new
     changesets that were not in the marks file are imported. The same marks
     file is used to save the list of changesets again for the next
@@ -1897,7 +1824,6 @@ Remarks:
 
 
     Output format parameters (--^format option):
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     This command accepts a format string to show the output.
 
@@ -1928,38 +1854,6 @@ Remarks:
     - {^XlinkWritable}
     - {^XlinkRelative}
     - {^RepSpec}
-========
-	
-        This command accepts a format string to show the output.
-	
-        The output parameters of this command are the following:
-	
-        - {^ClientPath}
-        - {^RelativePath}
-        - {^ServerPath}
-        - {^Size}
-        - {^Hash}
-        - {^Owner}
-        - {^RevisionHeadChangeset}
-        - {^RevisionChangeset}
-        - {^Status}
-        - {^Type}
-        - {^Changelist}
-        - {^IsLocked}
-        - {^LockedBy}
-        - {^LockedWhere}
-        - {^IsUnderXlink}
-        - {^UnderXlinkTarget}
-        - {^UnderXlinkPath}
-        - {^UnderXlinkWritable}
-        - {^UnderXlinkRelative}
-        - {^IsXlink}
-        - {^XlinkTarget}
-        - {^XlinkName}
-        - {^XlinkWritable}
-        - {^XlinkRelative}
-        - {^RepSpec}
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     Please note that '--^format' and '--^xml' options are mutually exclusive, so
     they can't be used at the same time.
@@ -1972,11 +1866,7 @@ Examples:
     cm ^fileinfo proj_specs.docx --^fields=^ServerPath,^RevisionChangeset --^xml
     cm ^fileinfo samples.ogg --^format="{^ServerPath}[{^Owner}] -> {^Size}"
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 == CMD_DESCRIPTION_FIND ==
-========
-== CMD_DESCRIPTION_FIND_QUERY ==
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 Runs SQL-like queries to find Unity VCS objects.
 
 == CMD_USAGE_FIND ==
@@ -2082,15 +1972,9 @@ Options:
     -^R | -^r | --^recursive  Recursively finds in directories.
     --^checkcontent           Compares files by content.
     --^onlychanged            Finds only changed files; checkouts will not be
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
                              obtained.
     path                      (Default: current directory.)
                              Initial path to find changed files.
-========
-                        obtained.
-    path                      (Default: current directory.)
-                        Initial path to find changed files.
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
 == CMD_HELP_FINDCHANGED ==
 Remarks:
@@ -2171,15 +2055,9 @@ Options:
 
     -^R | -^r | --^recursive  Recursively finds in directories.
     --^exclusions             This option allows cutting the search inside the ignored
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
                              paths, defined by the file ignore.conf.
     path                      (Default: current directory.)
                              Initial path to find private files.
-========
-                        paths, defined by the file ignore.conf.
-    path                      (Default: current directory.)
-                        Initial path to find private files.
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
 == CMD_HELP_FINDPRIVATE ==
 Remarks:
@@ -2205,11 +2083,7 @@ Usage:
 
     cm ^getconfig [^setfileasreadonly] [^location] [^extensionworkingmode]
                  [^extensionprefix] [^defaultrepserver]
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
-========
-    
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 Options:
 
     ^setfileasreadonly       Returns whether the protected files are left as
@@ -2300,11 +2174,7 @@ Usage:
 Options:
 
     --^format                 Retrieves the output message in a specific format. See
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
                              Remarks for more info.
-========
-                        Remarks for more info.
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     --^stats                  Prints some statistics about the get status process.
     -^R | -^r | --^recursive  Shows recursively the status in directories.
     item_path                 Item or items to get status from. Use double quotes
@@ -2315,15 +2185,9 @@ Options:
 Remarks:
 
     Output format parameters (--^format option):
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     This command accepts a format string to show the output.
 
     The output parameters of this command are the following:
-========
-        This command accepts a format string to show the output.
-
-        The output parameters of this command are the following:
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     {0}  Item path.
     {1}  Item status:
@@ -2339,23 +2203,13 @@ Reading input from stdin:
     The '^getstatus' command can read paths from stdin. To do this, pass a
     single dash "-".
     Example: 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     cm ^getstatus -
-========
-	    cm ^getstatus -
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     Paths will be read until an empty line is entered.
     This allows you to use pipe to specify which paths to get the status for.
     Example:
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     dir /S /B *.c | cm ^getstatus --^format="Path {0} Status {1}" -
     (In Windows, gets the status of all .c files in the workspace.)
-========
-
-      dir /S /B *.c | cm ^getstatus --^format="Path {0} Status {1}" -
-      (In Windows, gets the status of all .c files in the workspace.)
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
 Examples:
 
@@ -2387,15 +2241,9 @@ Remarks:
 
     Output format parameters (--^format option):
     
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     This command accepts a format string to show the output.
     
     The output parameters of this command are the following:
-========
-        This command accepts a format string to show the output.
-    
-        The output parameters of this command are the following:
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     {^tab}        Inserts a tab space.
     {^newline}    Inserts a new line.
     {^name}       Branch name.
@@ -2435,11 +2283,7 @@ Examples:
 == CMD_DESCRIPTION_GETWORKSPACEFROMPATH ==
 Gets workspace info from a path.
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 == CMD_USAGE_GETWORKSPACEFROMPATH ==
-========
-== CMD_USAGE_GWP ==
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 Usage:
 
     cm ^getworkspacefrompath | ^gwp <item_path> [--^format=<str_format>] [--^extended]
@@ -2457,15 +2301,9 @@ Remarks:
     This command shows information about the workspace that is located in path.
 
     Output format parameters (--^format option):
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     This command accepts a format string to show the output.
 
     The output parameters of this command are the following:
-========
-        This command accepts a format string to show the output.
-
-        The output parameters of this command are the following:
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     {0} | {^wkname}          Workspace name.
     {1} | {^wkpath}          Workspace path.
     {2} | {^machine}         Client machine name.
@@ -2478,11 +2316,7 @@ Remarks:
 
 Examples:
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     cm ^getworkspacefrompath c:\myworkspace\code\file1.cpp --^format="Workspace name: {^wkname}"
-========
-    cm ^gwp c:\myworkspace\code\file1.cpp --^format="Workspace name: {^wkname}"
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     cm ^gwp . --^format="Name: {^wkname} | Type: {^type}, {^dynamic}"
 
 == CMD_DESCRIPTION_HELP ==
@@ -2570,7 +2404,6 @@ Remarks:
 
     Available tests:
     --^serveruploadtest    (Default) Measures the data upload speed from
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
                            Unity VCS client to the server.
     --^serverdownloadtest  (Default) Measures the data download speed from
                            Unity VCS server to the client.
@@ -2586,23 +2419,6 @@ Remarks:
                            (It shows Network Interface performance counters
                            provided by Microsoft Windows).
                            Available in Microsoft Windows only.
-========
-                                   Unity VCS client to the server.
-    --^serverdownloadtest  (Default) Measures the data download speed from
-                                   Unity VCS server to the client.
-    --^disktest            (Default) Measures the disk read speed and disk
-                                   write speed.
-    --^systemnetworkusage  Shows the current usage of system network
-                                   resources.
-                                   (It shows Network Interface performance counters
-                                   provided by Microsoft Windows).
-                                   Available in Microsoft Windows only.
-    --^systemdiskusage     Shows the current usage of system physical
-                                   disks.
-                                   (It shows Network Interface performance counters
-                                   provided by Microsoft Windows).
-                                   Available in Microsoft Windows only.
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
 Examples:
 
@@ -2716,12 +2532,8 @@ Usage:
                       [--^onlycurrentuser] [--^onlycurrentworkspace]
                       [--^ignorecase] 
                       [--^machinereadable [--^startlineseparator=<sep>]
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
                         [--^endlineseparator=<sep>] [--^fieldseparator=<sep>]
                         [--^smartlocks]]
-========
-                        [--^endlineseparator=<sep>] [--^fieldseparator=<sep>]]
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
 Options:
 
@@ -2753,14 +2565,11 @@ Options:
                             the lines should end.
     --^fieldseparator        Used with the '--^machinereadable' flag, specifies how
                             the fields should be separated.
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     --^smartlocks            Used with the '--^machinereadable' flag, shows all the
                             smart lock fields. Otherwise, it only shows the legacy locks
                             fields. This parameter is needed to avoid breaking
                             compatibility with older integrations / plugins that expect
                             the old format.                            
-========
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     revspec                 If one or more are present, this command will display
                             one lock line for each specified revision if its
                             associated item is locked in the server. Otherwise,
@@ -2871,10 +2680,7 @@ Commands:
 
     - ^list | ^ls
     - ^unlock
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     - ^create | ^mk
-========
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     To get more information about each command run:
     cm ^lock <command> --^usage
@@ -2884,16 +2690,10 @@ Commands:
 Examples:
 
     cm ^lock
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     (The '^list' subcommand is the default.)
     cm ^lock ^list --^anystatus
     cm ^lock ^unlock ^itemid:56@myrep@localhost:8084
     cm ^lock ^create /main/task@myrep ^itemid:56@myrep
-========
-    (The subcommand '^list' is the default.)
-    cm ^lock ^ls ^serverpath:/src/foo.c#^cs:99@default@localhost:8084
-    cm ^lock ^unlock 91961b14-3dfe-4062-8c4c-f33a81d201f5
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
 == CMD_DESCRIPTION_LOG ==
 Gets info about revisions in changesets.
@@ -3003,14 +2803,11 @@ Remarks:
     These are valid output strings:
     - --^csformat="{^newline}Changeset {^changesetid} created on {^date};{^tab} changed items: {^items}."
     - --^itemformat="{^newline}The item {^path} was changed in the branch {^branch}."
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     Date format parameters (--^dateformat):
         To specify the output format in which dates will be printed.
         See the supported formats specified at:
         https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings
-========
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
 Examples:
 
@@ -3097,7 +2894,6 @@ Remarks:
       the root path ("/") is assumed.
 
     The default format string is:
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     "{^size,10} {^date:dd/MM/yyyy} {^date:HH:mm}\
     {^type,-6} {^location,-12} {^checkout,-5} {^name}\
@@ -3108,31 +2904,13 @@ Remarks:
     This command accepts a format string to show the output.
     
     The output parameters of this command are the following:
-========
-	
-      "{^size,10} {^date:dd/MM/yyyy} {^date:HH:mm}\
-       {^type,-6} {^location,-12} {^checkout,-5} {^name}\
-       {^symlinktarget}"
-
-    Output format parameters (--^format option):
-        
-        This command accepts a format string to show the output.
-    
-        The output parameters of this command are the following:
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     - {^size}
     - {^formattedsize}
     - {^date}
     - {^type}
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
         - ^dir: directory,
         - ^txt: text file,
         - ^File: file.
-========
-      - ^dir: directory,
-      - ^txt: text file,
-      - ^File: file.
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     - {^location} (Example: ^br:branch#cset)
     - {^checkout}
     - {^name}
@@ -3155,13 +2933,8 @@ Remarks:
     - {^guid} (Will take longer to resolve)
     - {^itemguid}
     - {^transformed} (Show applied rule for transformed items. Check the
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
       Administrator Guide to learn about Transformable workspaces:
       https://www.plasticscm.com/download/help/adminguide)
-========
-                         Administrator Guide to learn about Transformable workspaces:
-       https://www.plasticscm.com/download/help/adminguide)
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     You can customize the '^ls' format setting the PLASTIC_LS_FORMAT environment
     variable.
@@ -3227,7 +3000,6 @@ Remarks:
     If the type is not specified, lists all the triggers on the server.
 
     Output format parameters (--^format option):
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     This command accepts a format string to show the output.
 
@@ -3238,18 +3010,6 @@ Remarks:
     {3}  Trigger owner.
     {4}  Trigger type.
     {5}  Trigger filter.
-========
-    
-        This command accepts a format string to show the output.
-    
-        The output parameters of this command are the following:
-        {0}  Trigger position.
-        {1}  Trigger name.
-        {2}  Trigger path.
-        {3}  Trigger owner.
-        {4}  Trigger type.
-        {5}  Trigger filter.
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
 Examples:
     cm ^trigger list after-mklabel
@@ -3452,38 +3212,22 @@ Remarks:
     - Branch specification (brspec):
         - cm merge [^br:/]br_name
         - Example: cm merge ^br:/main/task001
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
           (Merges from the last changeset on this branch.)
-========
-            (Merges from the last changeset on this branch.)
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     - Label specification (lbspec):
         - cm merge ^lb:lb_name
         - Example: cm merge ^lb:BL001
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
           (Merges from the labeled changeset.)
-========
-            (Merges from the labeled changeset.)
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     - Changeset specification (csetspec):
         - cm merge ^cs:cs_number
         - Example: cm merge ^cs:25
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
           (Merges from the given changeset content.)
-========
-            (Merges from the given changeset content.)
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     - Shelve specification (shspec):
         - cm merge ^sh:shelve_number
         - Example: cm merge ^sh:2
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
           (Merges from the given shelve content.)
-========
-            (Merges from the given shelve content.)
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     To automatically resolve directory conflicts, use '--^automaticresolution'
     option and specify the type of conflict followed by the contributor
@@ -3525,7 +3269,6 @@ Remarks:
     ^onlysrc  Automatic merge if only source contributor modified the item.
     ^onlydst  Automatic merge if only destination contributor modified the item.
     ^try      Automatic merge if only one contributor has modified the
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
               conflictive piece of code (each conflict).
     ^forced   Always try to solve all non-automatic conflicts.
 
@@ -3553,35 +3296,6 @@ Remarks:
     - '--^machinereadable' and '--^startlineseparator', '--^endlineseparator',
       '--^fieldseparator' options to print the output on a machine-readable 
       way (easier-to-parse).
-========
-                     conflictive piece of code (each conflict).
-    ^forced   Always try to solve all non-automatic conflicts.
-
-    These are the options that are mainly used by plugins and integrations:
-	
-        - '--^resolveconflict' to solve a directory conflict. You also have to
-          use the following options:
-              - '--^conflict' is the index of the conflict that you want to 
-                solve, starting at 1.
-              - '--^resolutionoption' indicates the conflict resolution to 
-                 use. This can be:
-                    - '^src' to keep the source change and discard the 
-                      destination change
-                    - '^dst' to keep the destination change and discard the 
-                      source change
-                    - '^rename' (only if the conflict type supports this 
-                      resolution), to rename the destination to the given name
-                      provided with the '--^resolutioninfo' option.
-                        - '--^resolutioninfo' to provide the name to use on a 
-                          '^rename' resolution
-              - '--^mergeresultfile' and '--^solvedconflictsfile', both used to 
-                store the merge info between different calls.
-        - '--^nointeractiveresolution' indicates the merge to not ask the user for
-          manual conflict resolution.
-        - '--^machinereadable' and '--^startlineseparator', '--^endlineseparator',
-          '--^fieldseparator' options to print the output on a machine-readable 
-          way (easier-to-parse).
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     Set the PLASTICEDITOR environment variable to specify an editor for
     entering comments. If the PLASTICEDITOR environment variable is set, and
@@ -3624,19 +3338,11 @@ Examples:
     'main' head')
 
     cm ^merge --^machinereadable --^startlineseparator=start@_@line \
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
         --^endlineseparator=new@_@line --^fieldseparator=def#_#sep \
         --^mergeresultfile=C:\Users\Borja\AppData\Local\Temp\2tmp4D6C.tmp \
         --^solvedconflictsfile=C:\Users\Borja\AppData\Local\Temp\2tmp4D6D.tmp \
         --^resolveconflict --^conflict=1 --^resolutionoption=rename \
         --^resolutioninfo=bin_dst ^br:/main/task --^merge
-========
-      --^endlineseparator=new@_@line --^fieldseparator=def#_#sep \
-      --^mergeresultfile=C:\Users\Borja\AppData\Local\Temp\2tmp4D6C.tmp \
-      --^solvedconflictsfile=C:\Users\Borja\AppData\Local\Temp\2tmp4D6D.tmp \
-        --^resolveconflict --^conflict=1 --^resolutionoption=rename \
-      --^resolutioninfo=bin_dst ^br:/main/task --^merge
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     (Example for plugins and integrations)
 
 == CMD_DESCRIPTION_ATTRIBUTE_CREATE ==
@@ -3923,7 +3629,6 @@ Options:
 Remarks:
 
     Output format parameters (--^format option):
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     This command accepts a format string to show the output.
     The output parameters of this command are the following:
     - {^id}                Branch id.
@@ -3937,21 +3642,6 @@ Remarks:
     - {^repository}        Repository.
     - {^repname}           Repository name.
     - {^repserver}         Repository server.
-========
-        This command accepts a format string to show the output.
-        The output parameters of this command are the following:
-        - {^id}                Branch id.
-        - {^comment}           Comment.
-        - {^date}              Date.
-        - {^name}              Name.
-        - {^owner}             Owner.
-        - {^parent}            Parent branch name.
-        - {^parentid}          Parent branch id.
-        - {^repid}             Repository id.
-        - {^repository}        Repository.
-        - {^repname}           Repository name.
-        - {^repserver}         Repository server.
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
 Examples:
 
@@ -4028,11 +3718,7 @@ Usage:
 Options:
 
     repspec  Repository specification.
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
              (Use 'cm ^help ^objectspec' to learn more about rep specs.)
-========
-                       (Use 'cm ^help ^objectspec' to learn more about rep specs.)
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
 == CMD_HELP_REPOSITORY_DELETE ==
 Remarks:
@@ -4068,17 +3754,10 @@ Options:
 Remarks:
 
     Output format parameters (--^format option):
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     This command accepts a format string to show the output.
     
     The output parameters of this command are the following:
-========
-    
-        This command accepts a format string to show the output.
-    
-        The output parameters of this command are the following:
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     {^repid} | {0}      Repository identifier.
     {^repname} | {1}    Repository name.
     {^repserver} | {2}  Server name.
@@ -4117,13 +3796,8 @@ Usage:
 Options:
 
     repspec    Repository to be renamed.
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
                (Use 'cm ^help ^objectspec' to learn more about repository
                specifications.)
-========
-                        (Use 'cm ^help ^objectspec' to learn more about repository
-                        specifications.)
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     new_name   New name for the repository.
 
 == CMD_HELP_REPOSITORY_RENAME ==
@@ -4153,13 +3827,8 @@ Options:
     db_file        The name of the database file on the database backend.
     rep_name       The name of the repository.
     repserverspec  The repository server specification.
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
                    (Use 'cm ^help ^objectspec' to learn more about repository
                    server specifications.)
-========
-                        (Use 'cm ^help ^objectspec' to learn more about repository
-                        server specifications.)
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
 == CMD_HELP_REPOSITORY_ADD ==
 Remarks:
@@ -4186,19 +3855,11 @@ Usage:
 Options:
 
     --^position    New position of the specified trigger.
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
                   This position must not be in use by another trigger of
                   the same type.
     --^filter      Checks only items that matches the specified filter.
     --^server      Creates the trigger on the specified server.
                   If no server is specified, executes the command on the
-========
-                        This position must not be in use by another trigger of
-                        the same type.
-    --^filter      Checks only items that matches the specified filter.
-    --^server      Creates the trigger on the specified server.
-                        If no server is specified, executes the command on the
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
                   one configured on the client. (Use 'cm ^help ^objectspec'
                   to learn more about repository server specifications.)
     subtype-type   Trigger execution and trigger operation.
@@ -4407,31 +4068,20 @@ Usage:
     (To get all the information about how to build object specs.)
 
 == CMD_HELP_OBJECTSPEC ==
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
 Several Unity VCS commands expect 'object specs' as input to refer to a
 given object (typically a branch, changeset, repository, etc).
-========
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
-    Several Unity VCS commands expect 'object specs' as input to refer to a
-    given object (typically a branch, changeset, repository, etc).
+This documentation describes the different "specs" available and how to
+build them.
 
-    This documentation describes the different "specs" available and how to
-    build them.
+Each spec type begins with a unique tag, for example "^rep:" or "^cs:". The tag
+must be specified for commands that take a general object spec, for example 
+"cm ^setowner object_spec", but can often be omitted for commands that take only
+a single type of spec, for example, "cm ^getfile revision_spec".
 
-    Each spec type begins with a unique tag, for example "^rep:" or "^cs:". The tag
-    must be specified for commands that take a general object spec, for example 
-    "cm ^setowner object_spec", but can often be omitted for commands that take only
-    a single type of spec, for example, "cm ^getfile revision_spec".
-
-Repository server spec (repserverspec): 
-
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 Repository server spec (repserverspec):
 
-========
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     ^repserver:name:port
 
     Examples:
@@ -4443,11 +4093,7 @@ Repository server spec (repserverspec):
         historical reasons. Long ago, we had separate workspace and repository
         servers, and the naming survived.
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 Repository spec (repspec):
-========
-Repository spec (repspec): 
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     ^rep:rep_name@[repserverspec]
 
@@ -4459,11 +4105,6 @@ Repository spec (repspec):
 
 Branch spec (brspec):
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
-========
-Branch spec (brspec): 
-
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     ^br:[/]br_name[@repspec]
 
     Examples:
@@ -4479,11 +4120,7 @@ Branch spec (brspec):
         our branches as /main, /main/task001, and so on. But now, we prefer the
         shorter form main, main/task001 which makes commands more compact.
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 Changeset spec (csetspec):
-========
-Changeset spec (csetspec): 
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     ^cs:cs_number|cs_guid[@repspec]
 
@@ -4492,11 +4129,7 @@ Changeset spec (csetspec):
     Examples:
         cm ^ls /code --^tree=ae1390ed-7ce9-4ec3-a155-e5a61de0dc77@code@skull:7070
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 Label spec (labelspec):
-========
-Label spec (labelspec): 
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     ^lb:lb_name[@repspec]
 
@@ -4521,13 +4154,7 @@ Revision spec:
 
         cm ^cat ^revid:1230@^rep:myrep@^repserver:myserver:8084
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 Item spec:
-========
-Item spec: 
-
-    ^item:path
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     There are different types of item specs:
 
@@ -4540,32 +4167,19 @@ Item spec:
 
 Attribute spec:
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
-========
-Attribute spec: 
-
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     ^att:att_name[@repspec]
 
     Example:
         cm ^attribute ^set ^att:merged@code@doe:8084 ^cs:25@code@doe:8084 done
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 Shelve spec:
-========
-Shelve spec: 
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     ^sh:sh_number[@repspec]
 
     Example:
         cm ^diff ^sh:2 ^sh:4
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 Workspace specs:
-========
-Workspace specs: 
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     ^wk:name@clientmachine
 
@@ -4575,7 +4189,7 @@ Workspace specs:
     Examples:
         cm ^showselector ^wk:codebase@modok
 
-    Side note: 
+    Side note:
         These specs come from the old days of Plastic SCM 2.x where 'workspace
         servers' existed as a way to store workspace metadata in a centralized
         way. Were deprecated due to performance issues.
@@ -4920,11 +4534,7 @@ Remarks:
     If the source path is a file, the destination path can be a file or a 
     directory. In the first case, the file will be renamed; otherwise, the item 
     will be moved.
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
-========
-	
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     If source path is a directory, the destination path must be a directory.
 
     The item to move or rename must exist.
@@ -5219,15 +4829,9 @@ Options:
 
     --^silent            Does not show any output.
     --^keepchanges (-^k)  Undoes the checkout and preserves the local changes.
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
                         Sample: undo the checkout of a file leave it as locally
                         changed with the same content on disk that it was.
                         This option cannot be used with dynamic workspaces.
-========
-                       Sample: undo the checkout of a file leave it as locally
-                       changed with the same content on disk that it was.
-                       This option cannot be used with dynamic workspaces.
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     item_path            Items to apply the operation. Use double quotes (" ")
                         to specify paths containing spaces. Use a whitespace to
                         separate paths. Use . to apply the operation to current
@@ -5313,19 +4917,11 @@ Remarks:
         - test_a.py
         - test_b.py
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     cm ^partial ^undo
     cm ^partial ^undo *
     cm ^partial ^undo file.txt code.cs /test
     cm ^partial ^undo .
     cm ^partial ^undo /src file.txt code.cs
-========
-        cm ^partial ^undo
-        cm ^partial ^undo *
-        cm ^partial ^undo file.txt code.cs /test
-        cm ^partial ^undo .
-        cm ^partial ^undo /src file.txt code.cs
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     If you want the operation to be recursive, you must specify the '-^r' flag.
 
@@ -5583,15 +5179,9 @@ Remarks:
 
     Output format parameters (--^format option):
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     This command accepts a format string to show the output.
 
     The output parameters of this command are the following:
-========
-        This command accepts a format string to show the output.
-    
-        The output parameters of this command are the following:
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     {^index} | {0}           Profile index in the profiles list
     {^name} | {1}            Profile name
     {^server} | {2}          Profile server
@@ -5902,7 +5492,6 @@ Usage:
 
     cm ^pull ^hydrate <dst_br_spec> [<src_rep_spec>]
                     [--^user=<usr_name> [--^password=<pwd>] | AuthOptions]
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     (Introduces the missing data for all the changesets of a branch previously
     replicated with '--^nodata'. If a repo to obtain the data is not specified,
     Unity VCS tries to use the "replication source" (origin of the replicated
@@ -5913,23 +5502,10 @@ Usage:
     (Introduces the missing data for a changeset previously replicated with
     '--^nodata'. If a repo to obtain the data is not specified, Unity VCS tries
     to use the "replication source").
-========
-     (Introduces the missing data for all the changesets of a branch previously
-     replicated with '--^nodata'. If a repo to obtain the data is not specified,
-     Unity VCS tries to use the "replication source" (origin of the replicated
-     branch)).
-
-    cm ^pull ^hydrate <dst_cs_spec> [<src_rep_spec>]
-                    [--^user=<usr_name> [--^password=<pwd>] | AuthOptions]
-     (Introduces the missing data for a changeset previously replicated with
-     '--^nodata'. If a repo to obtain the data is not specified, Unity VCS tries
-     to use the "replication source").
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
 Options:
 
     --^preview      Gives information about what changes will be pulled but
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
                    no changes are actually performed. This option is useful
                    to check the data that will be transferred before
                    replicating changes.
@@ -5939,17 +5515,6 @@ Options:
     --^user, --^password  Credentials to use if the authentication mode is
                    different in source and destination and there is not a
                    profile to authenticate to destination.
-========
-                        no changes are actually performed. This option is useful
-                        to check the data that will be transferred before
-                        replicating changes.
-    --^nodata       Replicates the branch changes without replicating the
-                        data. This option is not allowed with package
-                        replication.
-    --^user, --^password  Credentials to use if the authentication mode is
-                        different in source and destination and there is not a
-                        profile to authenticate to destination.
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     --^package      Specifies the previously created package file to import
                    for package based replication. Useful to move data between
                    servers when there is no direct network connection. Refer to
@@ -6064,7 +5629,6 @@ Remarks:
 
     1) Direct communication between servers: The destination server will fetch
        the data from the source server, automatically synchronizing data for
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
        the specified branch. It requires the user running the command to be 
        authenticated by the remote server, either using the default authentication
        in the client.conf file, or specifiying the '--^authmode' and '--^authdata'
@@ -6073,16 +5637,6 @@ Remarks:
     2) Import a previously generated package with push and the '--^package' option.
        This mode requires using a package file previously generated with the push
        command.
-========
-        the specified branch. It requires the user running the command to be 
-        authenticated by the remote server, either using the default authentication
-        in the client.conf file, or specifiying the '--^authmode' and '--^authdata'
-        modifiers, or '--^authmode' and '--^user' and '--^password' if the authentication
-        mode is ^UPWorkingMode.
-    2) Import a previously generated package with push and the '--^package' option.
-        This mode requires using a package file previously generated with the push
-    command.
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     Keep in mind that pull replication works in an indirect way. When executed,
     the command asks the destination repository to connect to the source and
@@ -6140,27 +5694,16 @@ Usage:
 Options:
 
     --^preview       Gives information about what changes will be pushed,
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
                     but no changes are actually performed. This option is
                     useful to check the data that will be transferred before
                     replicating changes.
-========
-                        but no changes are actually performed. This option is
-                        useful to check the data that will be transferred before
-                        replicating changes.
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     --^package       Specifies path for exporting replication package for
                     package based replication. 
                     Useful to move data between servers when there is no 
                     direct network connection.
     --^user, --^password  Credentials to use if the authentication mode is
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
                     different in source and destination and there is not a
                     profile to authenticate to destination.
-========
-                        different in source and destination and there is not a
-                        profile to authenticate to destination.
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     src_br_spec      The branch to push to a remote repository.
                     (Use 'cm ^help ^objectspec' to learn more about branch specs.)
     dst_rep_spec     The destination repository.
@@ -6173,11 +5716,7 @@ Translate options:
     Mode:
 
     --^trmode=(^copy|^name|^table --^trtable=<translation_table_file>)
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
       The source and destination repositories may use different authentication
-========
-        The source and destination repositories may use different authentication
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
       modes. The '--^trmode' option specifies how to translate the user names from
       the source to the destination. The '--^trmode' must be one of the following
       values:
@@ -6421,29 +5960,17 @@ Examples:
     'project@192.168.111.200:9095'.)
 
     cm ^clone project@ldapserver:8084 --authmode=^LDAPWorkingMode \
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
         --^authdata=::0:dave:fPBea2rPsQaagEW3pKNveA
-========
-     --^authdata=::0:dave:fPBea2rPsQaagEW3pKNveA
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     (Clones 'project' repository from 'ldapserver:8084' using LDAP
     authentication against the remote repository.)
 
     cm ^clone project@upserver:8084 --authmode=^UPWorkingMode \
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
         --^authdata=dave:fPBea2rPsQaagEW3pKNveA==
-========
-     --^authdata=dave:fPBea2rPsQaagEW3pKNveA==
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     (Clones 'project' repository from 'upserver:8084' using UPWorkingMode
     authentication against the remote repository.)
 
     cm ^clone project@upserver:8084 --authmode=^UPWorkingMode \
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
         --^user=<user> --^password=<pwd>
-========
-     --^user=<user> --^password=<pwd>
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     (Clones 'project' repository from 'upserver:8084' using UPWorkingMode
     authentication against the remote repository but specifying the 
     ^user and ^password instead of the ^authdata.)
@@ -6472,11 +5999,7 @@ Usage:
 Options:
 
     revspec    Specification of the changeset that contains the
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
                revision which content will be loaded in the workspace.
-========
-                        revision which content will be loaded in the workspace.
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
                (Use 'cm ^help ^objectspec' to learn more about revision specs.)
 
 == CMD_HELP_REVERT ==
@@ -7140,22 +6663,7 @@ Options:
 == CMD_HELP_SHOW_FIND_OBJECTS ==
 Remarks:
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     Available objects and attributes:
-
-    - ^attribute.
-    - ^attributetype.
-    - ^branch.
-    - ^changeset.
-    - ^label.
-    - ^merge.
-    - ^replicationlog.
-    - ^review.
-    - ^revision.
-    - ^shelve.
-========
-Available objects and attributes: 
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     - ^attribute.
     - ^attributetype.
@@ -7183,21 +6691,6 @@ Available objects and attributes:
     ^ID      integer.
 
     Examples:
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
-========
-
-                  cm ^find ^attribute "^where ^type = 'status'"
-                  (Finds all attributes of type 'status'.)
-
-                  cm ^find ^attribute "^where ^date > '^this ^week'"
-                  (Finds all attributes applied during the current week.)
-
-                  cm ^find ^attribute "^where ^value = 'resolved' ^and ^owner = '^me'"
-                  (Finds all attributes with value 'resolved' applied by me.)
-
-                  cm ^find ^attribute "^where ^srcobj = '^item:readme.txt'"
-                  (Finds the attributes applied to the item 'readme.txt'.)
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     cm ^find ^attribute "^where ^type = 'status'"
     (Finds all attributes of type 'status'.)
@@ -7208,7 +6701,6 @@ Available objects and attributes:
     cm ^find ^attribute "^where ^value = 'resolved' ^and ^owner = '^me'"
     (Finds all attributes with value 'resolved' applied by me.)
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     cm ^find ^attribute "^where ^srcobj = '^item:readme.txt'"
     (Finds the attributes applied to the item 'readme.txt'.)
 
@@ -7220,8 +6712,6 @@ Available objects and attributes:
 
     cm ^find ^attribute "^where ^srcobj = '^rev:^revid:1126'"
     (Finds the attributes applied to the specified revision id.)
-========
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
 ^attributetype:
     You can find attribute types by filtering using the following fields:
@@ -7246,22 +6736,6 @@ Available objects and attributes:
     - ^ReplSrcServer
 
     Examples:
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
-========
-
-                  cm ^find ^attributetype "^where ^name ^like 'st%'"
-                  (Finds all attribute where name starts with 'st'.)
-
-                  cm ^find ^attribute "^where ^date > '^today'"
-                  (Finds all attributes applied today.)
-
-                  cm ^find ^attributetype "^where ^comment != ''" --^xml
-                  (Finds all attribute types that have a comment and prints the 
-                  output in XML format to the standard output.)
-
-                  cm ^find ^attributetype "^where ^source = '^item:readme.txt'"
-                  (Finds all attribute types in item 'readme.txt'.)
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     cm ^find ^attributetype "^where ^name ^like 'st%'"
     (Finds all attribute where name starts with 'st'.)
@@ -7269,7 +6743,6 @@ Available objects and attributes:
     cm ^find ^attribute "^where ^date > '^today'"
     (Finds all attributes applied today.)
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     cm ^find ^attributetype "^where ^comment != ''" --^xml
     (Finds all attribute types that have a comment and prints the 
     output in XML format to the standard output.)
@@ -7283,8 +6756,6 @@ Available objects and attributes:
     cm ^find ^attributetype "^where ^source = '^lb:v0.14.1'"
     (Finds all attribute types in label 'v0.14.1'.)
 
-========
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 ^branch:
     You can find branches by filtering using the following fields:
 
@@ -7314,7 +6785,6 @@ Available objects and attributes:
     - ^ReplSrcId
     - ^ReplSrcRepository
     - ^ReplSrcServer
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     Examples:
     cm ^find ^branch "^where ^name ^like 'scm23%'"
@@ -7337,30 +6807,6 @@ Available objects and attributes:
     cm ^find ^branch "^where ^id = 2029607"
     (Finds the branch which id is 2029607.)
 
-========
-
-    Examples:
-                    cm ^find ^branch "^where ^name ^like 'scm23%'"
-                    (Finds branches which name starts with 'scm23'.)
-
-                    cm ^find ^branch "^where ^date > '^one ^week ^ago'"
-                    (Finds branches created during the last week.)
-
-                    cm ^find ^branch "^where ^changesets >= '^today'"
-                    (Finds branches with changesets created today.)
-
-                    cm ^find ^branch "^where ^attribute = 'status' ^and ^attrvalue = 'failed'"
-                    (Finds branches that have the attribute 'status' and which 
-                    value is 'failed'.)
-                    
-                     cm ^find ^branch "^where ^owner != '^me' ^and ^parent != '^br:/main'"
-                     (Finds branches created by other than me and which parent 
-                     branch is not '/main'.)
-
-                    cm ^find ^branch "^where ^id = 2029607"
-                    (Finds the branch which id is 2029607.)
-
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 ^changeset:
     You can find changesets by filtering using the following fields:
 
@@ -7384,7 +6830,6 @@ Available objects and attributes:
     Sorting fields:
     - ^date
     - ^changesetid
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     Replication related fields:
     - ^ReplLogId
@@ -7420,43 +6865,6 @@ Available objects and attributes:
     cm ^find ^changeset "^where ^parent = 548"
     (Finds all changesets which parent is cset 548.)
 
-========
-
-    Replication related fields:
-    - ^ReplLogId
-    - ^ReplSrcDate
-    - ^ReplSrcId
-    - ^ReplSrcRepository
-    - ^ReplSrcServer
-
-    Examples:
-
-                            cm ^find ^changeset "^where ^branch = '/main/scm23119'"
-                            (Finds all changesets in branch 'scm23119'.)
-
-                            cm ^find ^changeset "^where ^attribute = 'status'"
-                            (Finds the changesets with the attribute 'status'.)
-
-                            cm ^find ^changeset "^where ^date >= '6/8/2018' ^and ^owner != '^me'"
-                            (Finds all changesets with creation date equal or
-                            greater than 6/8/2018 and created by others than me.)
-
-                            cm ^find ^changeset "^where ^guid = '1b30674f-14cc-4fd7-962b-676c8a6f5cb6'"
-                            (Finds the changeset with the specified guid.)
-
-                            cm ^find ^changeset "^where ^comment = ''"
-                            (Finds the changesets with no comments.)
-
-                            cm ^find ^changeset "^where ^onlywithrevisions = 'false'"
-                            (Finds changesets with no revisions.)
-
-                            cm ^find ^changeset "^where ^changesetid = 29 ^and ^returnparent = 'true'"
-                            (Finds the parent of changeset 29.)
-
-                            cm ^find ^changeset "^where ^parent = 548"
-                            (Finds all changesets which parent is cset 548.)
-
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 ^label:
     You can find labels by filtering using the following fields:
 
@@ -7479,7 +6887,6 @@ Available objects and attributes:
     Sorting fields:
     - ^date
     - ^labelname
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     Replication related fields:
     - ^ReplLogId
@@ -7504,44 +6911,11 @@ Available objects and attributes:
     cm ^find ^label "^where ^changeset = 111733"
     (Finds the labels applied to changeset 111733.)
 
-========
-
-    Replication related fields:
-    - ^ReplLogId
-    - ^ReplSrcDate
-    - ^ReplSrcId
-    - ^ReplSrcRepository
-    - ^ReplSrcServer
-
-    Examples:
-
-                    cm ^find ^label "^where ^name ^like '7.0.16.%'"
-                    (Finds the labels with a name that starts with '7.0.16.'.)
-
-                    cm ^find ^label "^where ^date >= '^this ^month' ^and \
-                      ^attribute = 'publish-status' ^and ^attrvalue != 'PUBLISHED'"
-                    (Finds the labels created this month with an attribute 'publish-status'
-                    set to a value other than 'PUBLISHED'.)
-                    
-                    cm ^find ^label "^where ^branch = '/main'"
-                    (Finds all labels applied to the main branch.)
-
-                    cm ^find ^label "^where ^changeset = 111733"
-                    (Finds the labels applied to changeset 111733.)
-
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 ^merge:
     You can find merges by filtering using the following fields:
 
     ^srcbranch     branch spec.
                    Use 'cm ^help ^objectspec' to learn how to specify this object.
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
-========
-
-                   Example:
-
-
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     ^srcchangeset  changeset id (integer).
     ^dstbranch     branch spec. Use 'cm ^help ^objectspec' to learn how to
                    specify this object.
@@ -7560,7 +6934,6 @@ Available objects and attributes:
     - ^interval
     - ^intervalcherrypick
     - ^intervalcherrypicksubstractive
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     Examples:
 
@@ -7576,23 +6949,6 @@ Available objects and attributes:
     cm ^find ^merge "^where ^type = '^cherrypick' ^and ^owner = '^me'"
     (Finds all my cherry picks.)
 
-========
-
-    Examples:
-
-                      cm ^find ^merge "^where ^srcbranch = '^br:/main'"
-                      (Finds merges from the main branch.)
-
-                      cm ^find ^merge "^where ^dstchangeset = 108261" \
-                        --^format="{^srcbranch} {^srcchangeset} {^dstbranch} {^dstchangeset} {^owner}"
-                      (Finds the merges to changeset 108261 and prints the
-                      formatted output showing the source (branch and cset id),
-                      the destination (branch and cset id), and the merge owner.)
-
-                      cm ^find ^merge "^where ^type = '^cherrypick' ^and ^owner = '^me'"
-                      (Finds all my cherry picks.)
-
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 ^replicationlog:
     You can find replication log by filtering using the following fields:
 
@@ -7604,7 +6960,6 @@ Available objects and attributes:
     ^server          string.
     ^package         boolean.
     ^ID              integer.
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     Examples:
 
@@ -7614,17 +6969,6 @@ Available objects and attributes:
     cm ^find ^replicationlog "^where ^package = 'T' ^and ^server ^like '%cloud%'"
     (Finds the replication logs created from package which
     server name contains 'cloud'.)
-========
-
-    Examples:
-
-                         cm ^find ^replicationlog "^where ^branch = '/main/gm22358'"
-                         (Finds the replication logs of branch 'gm22358'.)
-
-                         cm ^find ^replicationlog "^where ^package = 'T' ^and ^server ^like '%cloud%'"
-                         (Finds the replication logs created from package which
-                         server name contains 'cloud'.)
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
 ^review:
     You can find code reviews by filtering using the following fields:
@@ -7654,7 +6998,6 @@ Available objects and attributes:
 
     Examples:
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     cm ^find ^review "^where ^status = 'pending' ^and ^assignee = '^me'"
     (Finds all my pending reviews.)
 
@@ -7663,17 +7006,6 @@ Available objects and attributes:
 
     cm ^find ^review "^where ^targettype = '^changeset'"
     (Finds the reviews which target type is changeset.)
-========
-                    cm ^find ^review "^where ^status = 'pending' ^and ^assignee = '^me'"
-                    (Finds all my pending reviews.)
-
-                    cm ^find ^review "^where ^target = '^br:/main/scm17932'"
-                    (Finds the reviews related to branch 'scm17932'.)
-
-                    cm ^find ^review "^where ^targettype = '^changeset'"
-                    (Finds the reviews which target type is changeset.)
-
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
 ^revision:
     You can find revisions by filtering using the following fields:
@@ -7704,7 +7036,6 @@ Available objects and attributes:
     - ^dir
     - ^bin
     - ^txt
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     Replication related fields:
     - ^ReplLogId
@@ -7739,42 +7070,6 @@ Available objects and attributes:
     (Finds the text revisions created by me two months
     ago and with size greater than about 3MB.)
 
-========
-
-    Replication related fields:
-    - ^ReplLogId
-    - ^ReplSrcDate
-    - ^ReplSrcId
-    - ^ReplSrcRepository
-    - ^ReplSrcServer
-
-    Examples:
-
-                              cm ^find ^revision "^where ^changeset >= 111756"
-                              (Finds the revisions created in changeset 111756 
-                              and later.)
-
-                              cm ^find ^revision "^where ^item = 'readme.txt' ^or ^itemid = 2250"
-                              (Finds the revisions of item 'readme.txt' plus 
-                              item id 2250.)
-
-                              cm ^find ^revision "^where ^item = 'readme.txt' ^or ^item = 2250"
-                              (Gets the same revisions as the previous example.)
-
-                              cm ^find ^revision "^where ^attribute = 'status' ^and ^attrvalue != 'open'"
-                              (Finds the revisions with attribute 'status' which
-                              value is other than 'open'.)
-
-                              cm ^find ^revision "^where ^archived = 'true'"
-                              (Finds the revisions that are archived in an 
-                              external storage.)
-
-                              cm ^find ^revision "^where ^type = '^txt' and \
-                                ^size > 300000 ^and ^owner = '^me' and ^date >= '2 ^months ^ago'"
-                              (Finds the text revisions created by me two months
-                              ago and with size greater than about 3MB.)
-
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 ^shelve:
     You can find shelves by filtering using the following fields:
 
@@ -7796,7 +7091,6 @@ Available objects and attributes:
     - ^ReplSrcId
     - ^ReplSrcRepository
     - ^ReplSrcServer
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     Examples:
 
@@ -7810,32 +7104,13 @@ Available objects and attributes:
     cm ^find ^shelve "^where ^id >= 3848"
     (Finds the shelves which object id is greater than 3848.)
 
-========
-
-    Examples:
-
-                    cm ^find ^shelve "^where ^owner != '^me' ^and ^date >= '^1 ^years ^ago'"
-                    (Finds the shelves created by others than me during the last
-                    year.)
-
-                    cm ^find ^shelve "^where ^shelveid = 2"
-                    (Finds the shelve with name 2.)
-
-                    cm ^find ^shelve "^where ^id >= 3848"
-                    (Finds the shelves which object id is greater than 3848.)
-
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 Replication related fields:
     Many objects track replication data, meaning Unity VCS tracks where they were
     originally created.
 
     The fields you can use are:
     ^ReplSrcServer       repspec. Stands for "replication source server". 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
                          Server where the object was replicated from.
-========
-                            Server where the object was replicated from.
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
      ^ReplSrcRepository  string. Stands for "replication source repo". It is
                          the repository where the object was replicated from.
      ^ReplLogId          integer. ID of the replication operation. In Unity VCS,
@@ -7853,7 +7128,6 @@ Replication related fields:
 
     Examples:
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     cm ^find ^branch "^where ^replsrcserver='skull.codicefactory.com:9095'"
     (Finds the branches replicated from server 'skull'.)
 
@@ -7890,44 +7164,6 @@ Replication related fields:
     (Now, you can find the changesets replicated from codice@AFRODITA:8087:)
     cm ^find ^changesets "^where ^replsrcid = 7860739"
 
-========
-                            cm ^find ^branch "^where ^replsrcserver='skull.codicefactory.com:9095'"
-                            (Finds the branches replicated from server 'skull'.)
-
-                            cm ^find ^branch "^where ^replsrcserver = 'skull.codicefactory.com:9095' \
-                              ^and ^replsrcrepository = 'codice'"
-                            (Finds the branches replicated from server 'skull'
-                            and from repository 'codice'.)
-
-                            cm ^find ^revision "^where ^repllogid = 2019974"
-    (Finds the revisions replicated from replica 2019974.)
-
-                            cm ^find ^label "^where ^replsrcdate >= '^one ^month ^ago' \
-                              ^and ^date >= '15 ^days ^ago'"
-                            (Finds the labels created 15 days ago and were 
-                            replicated one month ago.)
-                     
-                            cm ^find ^replicationlog "^where ^date > '^one ^week ^ago'"
-    (returns the following line:)
-    - 8780433 27/09/2018 8:49:38 codice@BACKYARD:8087 F mbarriosc
-
-    (Finds the replication logs created one week ago. Now, you can
-    check that the replicated branch was created before it was 
-    replicated over:)
-
-                            cm ^find ^branch "^where ^repllogid = 8780433"
-    (returns the following line:)
-    - 8780443 26/09/2018 12:20:55 /main/scm23078 maria codice T
-
-                            cm ^find ^replicationsource
-    (returns the following two lines:) 
-    - 7860739 codice@AFRODITA:8087 d9c4372a-dc55-4fdc-ad3d-baeb2e975f27
-    - 8175854 codice@BACKYARD:8087 66700d3a-036b-4b9a-a26f-adfc336b14f9
-
-    (Now, you can find the changesets replicated from codice@AFRODITA:8087:)
-                            cm ^find ^changesets "^where ^replsrcid = 7860739"
-
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 Date constants:
     You can use date formats that follow your machine localization settings.
     For example, if your computer displays dates in the format 'MM-dd-yyyy',
@@ -7985,7 +7221,6 @@ Usage:
 
 Options:
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     --^extended    Shows ACL hierarchy tree.
     --^xml         Prints the output in XML format to the standard output.
                   It is possible to specify an output file.
@@ -8000,22 +7235,6 @@ Options:
                   repserver, repository, branch, changeset, label, item,
                   and attribute. 
                   (Use 'cm ^help ^objectspec' to learn more about specs.)
-========
-      --^extended        Shows ACL hierarchy tree.
-      --^xml             Prints the output in XML format to the standard output.
-                        It is possible to specify an output file.
-      --^encoding        Used with the '--^xml' option, specifies the encoding to
-                        use in the XML output, i.e.: utf-8.
-                        See the MSDN documentation at
-                        http://msdn.microsoft.com/en-us/library/system.text.encoding.aspx
-                        to get the table of supported encodings and its format, 
-                        (at the end of the page, in the "Name" column).
-    object_spec        Specification of the object to show the ACL of.
-                      The valid objects for this command are:
-                      repserver, repository, branch, changeset, label, item,
-                      and attribute. 
-                      (Use 'cm ^help ^objectspec' to learn more about specs.)
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
 == CMD_HELP_SHOWACL ==
 Examples:
@@ -8383,17 +7602,10 @@ Usage:
 
     cm ^tube ^connect
     (Connects the Unity VCS server to Plastic Tube.)
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     cm ^tube ^disconnect
     (Disconnects the Unity VCS server from Plastic Tube.)
 
-========
-	
-    cm ^tube ^disconnect
-    (Disconnects the Unity VCS server from Plastic Tube.)
-	
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     cm ^tube ^status
     (Shows if the Unity VCS server is connected to Plastic Tube.)
 
@@ -8461,16 +7673,9 @@ Options:
                            changed with the same content on disk that it was.
                            This option cannot be used with dynamic workspaces.
     item_path              Items to apply the operation. Use a whitespace to separate
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
                            paths. Use double quotes (" ") to specify paths
                            containing spaces. Use . to apply the operation to
                            the current directory.
-========
-                        paths. Use double quotes (" ") to specify paths
-                           containing spaces. Use . to apply the operation to
-                           the current directory.
-
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
 
 == CMD_HELP_UNDOCHECKOUT ==
@@ -8540,11 +7745,7 @@ Options:
 
     -^R | -^r | --^recursive  Undoes unchanged items recursively in the specified paths.
     --^symlink                Applies the uncounchanged operation to the link and not
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
                               to the target.
-========
-                        to the target.
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     --^silent                 Does not show any output.
     item_path                 Items to apply the operation. Use a whitespace to separate
                               paths. Use double quotes (" ") to specify paths
@@ -8830,40 +8031,19 @@ Usage:
     cm ^lock ^unlock <itemspec>[ ...] [--^remove]
 
 Options:
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     --^remove            Removes the locks completely for the specified items.
                         If this option is not specified, it only releases the
                         Locked status.
     itemspec            One or more item specs. (Use 'cm ^help ^objectspec'
                         to learn more about itemspecs.)
-========
-
-    repserverspec   Repository server specification. (Use 'cm ^help ^objectspec'
-                    to learn more about repserver specs.)
-    guid            A list of item GUIDs to be unlocked. Use a whitespace to
-                    separate GUIDs.
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
 == CMD_HELP_LOCK_UNLOCK ==
 Remarks:
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     - Only the administrator of the server can run the 'cm ^unlock --^remove'
       command to delete locks.
     - Only the administrator can release locks that belong to other users.
       Users can release their own locks.
-========
-    - The command uses the specified server to unlock the items.
-    - If no server is specified, the command tries to obtain a server from the
-      current workspace.
-    - If no server was calculated on the previous steps, the server is obtained
-      from the current Unity VCS client configuration.
-    - Only the administrator of the server can run the 'cm ^unlock' command.
-    - To specify a GUID, the format should be the 32-digit separated by
-      hyphens format (optionally enclosed in curly braces):
-       - {00000000-0000-0000-0000-000000000000}
-       - 00000000-0000-0000-0000-000000000000
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
 Examples:
 
@@ -9361,11 +8541,7 @@ Search types:
     --^cloaked                      Prints cloaked items.
     --^controlledchanged            This flag substitutes the following options:
                                     '--^added', '--^checkout', '--^copied',
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
                                     '--^replaced', '--^deleted', '--^moved'.
-========
-                                     '--^replaced', '--^deleted', '--^moved'.
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     --^all                          This flag replaces the following parameters:
                                     '--^controlledchanged', '--^changed',
                                     '--^localdeleted', '--^localmoved', '--^private'.
@@ -9594,11 +8770,7 @@ Usage:
 
     cm ^autocomplete --^line <shell_line> --^position <cursor_position>
     (Returns autocomplete suggestions for 'shell_line' to be inserted at
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     'cursor_position'.)
-========
-     'cursor_position'.)
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
 Options:
 
@@ -9701,11 +8873,7 @@ Remarks:
     - ADWorkingMode (Active Directory)
     - UPWorkingMode (User and password)
     - SSOWorkingMode (Single Sign On)
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
-========
-                        
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     Client configuration:
 
     If this parameter is not specified, the default directory for
@@ -9715,19 +8883,11 @@ Remarks:
     AuthParameters:
 
     - ^LDAPWorkingMode and ^UPWorkingMode
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
         - --^user=<user>
         - --^password=<password>
     - ^SSOWorkingMode
         - --^user=<user>
         - --^token=<token>
-========
-      - --^user=<user>
-      - --^password=<password>
-    - ^SSOWorkingMode
-      - --^user=<user>
-      - --^token=<token>
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
 Examples:
 
@@ -9735,20 +8895,12 @@ Examples:
     (runs the interactive Unity VCS client configuration command)
 
     cm ^configure --^language=^en --^workingmode=^LDAPWorkingMode --^user=^jack --^password=^01234 \
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
         --^server=^plastic.mymachine.com --^port=^8084
-========
-                 --^server=^plastic.mymachine.com --^port=^8084
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     (configures the Unity VCS client with the specified parameters and creates the 'client.conf'
     configuration file in the default directory)
 
     cm ^configure --^language=^en --^workingmode=^NameWorkingMode --^server=^plastic.mymachine.com \
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
         --^port=^8084 --^clientconf=^clientconf_exp.conf
-========
-                 --^port=^8084 --^clientconf=^clientconf_exp.conf
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     (configures the Unity VCS client with the specified parameters and creates the 'client.conf'
     configuration file in the specified path)
 
@@ -9765,11 +8917,7 @@ Examples:
 == CMD_DESCRIPTION_PURGE ==
 Allows the user to inspect, register and execute repository purges. Purged revisions are no longer accessible for that repository, thus helping to free space.
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 Warning: Purge actions are irreversible. Once they are executed, you will not be able to load purged revisions anymore—either by switching a workspace or when showing branch or changeset differences. Use this under your own responsibility.
-========
-WARNING: Purge actions are irreversible. Once they are executed, you will NOT be able to load purged content anymore - either by switching a workspace or when showing branch or changeset differences. Use it under your own responsibility.
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
 == CMD_USAGE_PURGE ==
 Usage:
@@ -9781,17 +8929,13 @@ Commands:
     - ^execute
     - ^show
     - ^history
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
     - ^unregister
-========
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
     To get more information about each command run:
     cm ^purge <command> --^usage
     cm ^purge <command> --^help
 
 == CMD_HELP_PURGE ==
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 Examples:
 
     cm ^purge ^register ".mkv" "1955-Nov-05 6:00 AM" --^repository=timemachine
@@ -9809,14 +8953,10 @@ Examples:
 
     cm ^purge ^unregister 545ec81b-23ea-462c-91f4-d7c62a6e8817
     (purges that were not executed can be deleted from the registry)
-========
-TO BE DONE
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
 == CMD_DESCRIPTION_PURGE_REGISTER ==
 Computes and registers a purge action.
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 File revisions older than the selected date(s) would be considered for purging and, as a rule, we will keep at least a revision in every branch head and labeled revisions. You can use the "cm ^purge ^show" command to check the selected revisions prior to run it with the "cm ^purge ^execute" command.
 
 == CMD_USAGE_PURGE_REGISTER ==
@@ -9845,22 +8985,10 @@ Examples:
 
     cm ^purge ^register ".mkv" "1955-Nov-05 6:00 AM" --^repository=timemachine
     (you can specify a different repository to register the purge)
-========
-File revisions older than the selected date(s) would be considered for purging and, as a rule, we will always keep at least a revision in every branch head and labeled revisions.
-
-You can use the "cm ^purge ^show" command to revise the selected revisions prior to run it with the "cm ^purge ^execute" command.
-
-== CMD_USAGE_PURGE_REGISTER ==
-TO BE DONE
-
-== CMD_HELP_PURGE_REGISTER ==
-TO BE DONE
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 
 == CMD_DESCRIPTION_PURGE_EXECUTE ==
 Executes a purge action previously registered.
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt
 Warning: Purge actions are irreversible. Once they are executed, you will not be able to load purged revisions anymore—either by switching a workspace or when showing branch or changeset differences. Use this under your own responsibility.
 
 Please ensure you check the file history to confirm which revisions/changesets are not relevant. Do not hesitate to use the cm ^purge ^show command prior to the purge execution in order to verify no unexpected revision is selected for its removal.
@@ -9977,32 +9105,3 @@ Examples:
 
     cm ^purge ^unregister 545ec81b-23ea-462c-91f4-d7c62a6e8817 --^server=myorg@cloud
     (you can specify a different server to unregister the purge)
-========
-WARNING: Purge actions are irreversible. Once they are executed, you will NOT be able to load purged content anymore - either by switching a workspace or when showing branch or changeset differences. Use it under your own responsibility.
-
-Please ensure you check the file history to confirm which revisions/^changesets are not relevant. Do not hesitate to use the "cm ^purge ^show" command prior to the purge execution in order to verify no unexpected content is selected for its removal.
-
-== CMD_USAGE_PURGE_EXECUTE ==
-TO BE DONE
-
-== CMD_HELP_PURGE_EXECUTE ==
-TO BE DONE
-
-== CMD_DESCRIPTION_PURGE_SHOW ==
-TO BE DONE
-
-== CMD_USAGE_PURGE_SHOW ==
-TO BE DONE
-
-== CMD_HELP_PURGE_SHOW ==
-TO BE DONE
-
-== CMD_DESCRIPTION_PURGE_HISTORY ==
-TO BE DONE
-
-== CMD_USAGE_PURGE_HISTORY ==
-TO BE DONE
-
-== CMD_HELP_PURGE_HISTORY ==
-TO BE DONE
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.en.txt

@@ -1252,7 +1252,6 @@ Mostrar shelves
 == ShowShelvesViewTooltip ==
 Mostrar la vista de shelves
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/plastic-gui.es.txt
 == NoShelvesCreatedExplanation ==
 Aún no se han creado shelves
 
@@ -1262,8 +1261,6 @@ Aún no se han creado bloqueos en ficheros
 == NoShelvesMatchQueryExplanation ==
 No hay Shelves que coincidan con tu consulta
 
-========
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/plastic-gui.es.txt
 == HideShelvesButton ==
 Ocultar shelves
 
@@ -1515,7 +1512,6 @@ Deleting shelve...
 == DeletingShelvesPlural ==
 Deleting shelves...
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/plastic-gui.es.txt
 == RemovingLocksSingular ==
 Borrando bloqueo...
 
@@ -1528,8 +1524,6 @@ Liberando bloqueo...
 == ReleasingLocksPlural ==
 Liberando bloqueos...
 
-========
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/plastic-gui.es.txt
 == ApplyingShelve ==
 Applying shelve...
 
@@ -2787,12 +2781,9 @@ There are {0} directory conflicts that must be resolved before updating the work
 == CreatedByColumn ==
 Created by
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/plastic-gui.es.txt
 == OwnerColumn ==
 Owner
 
-========
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/plastic-gui.es.txt
 == UnresolvedXlink ==
 unresolved xlink
 
@@ -4020,12 +4011,9 @@ Toggle details
 == ShowDetails ==
 Show details
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/plastic-gui.es.txt
 == ShowLocks ==
 Mostrar locks
 
-========
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/plastic-gui.es.txt
 == ToggleDetailsButtonTooltip ==
 Hide/show details area
 
@@ -7203,11 +7191,7 @@ Añadir una nueva cuenta de Unity DevOps Version Control
 Seleccione una ruta
 
 == EmptyRepositoryHeader ==
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/plastic-gui.es.txt
 El repositorio está vacío
-========
-El repositorio todavía está vacío
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/plastic-gui.es.txt
 
 == WorkspaceNotOnDisk ==
 <no está en disco>
@@ -7813,12 +7797,9 @@ Descubre la nueva experiencia de Code Review con múltiples revisores en el
 == UnityDashboard ==
 Unity Dashboard
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/plastic-gui.es.txt
 == WebAdmin ==
 Web Admin
 
-========
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/plastic-gui.es.txt
 == LoadingOrganizations ==
 Cargando organizaciones...
 
@@ -7829,7 +7810,6 @@ Más
 Iniciando sesión...
 
 == ShowEmbeddedShelveDiffTooltip ==
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/plastic-gui.es.txt
 Siempre abrir los shelves en la ventana actual
 
 == EmptyLabelsMessage ==
@@ -7906,6 +7886,3 @@ Revisión purgada
 
 == PurgedRevisionMessage ==
 El contenido no se pudo mostrar, esta revisión ha sido eliminada permanentemente.
-========
-Siempre abrir los shelves en la ventana actual
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/plastic-gui.es.txt

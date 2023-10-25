@@ -12,22 +12,13 @@ namespace UnityEditor.TestTools.TestRunner
     {
         private readonly TestSetting[] m_Settings =
         {
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.test-framework@1.3.8/UnityEditor.TestRunner/TestSettings/TestSettings.cs
 #if UNITY_2021_2_OR_NEWER
             new TestSetting<ScriptingImplementation?>(
                 settings => settings.scriptingBackend,
                 () => PlayerSettings.GetScriptingBackend(NamedBuildTarget.FromBuildTargetGroup(EditorUserBuildSettings.activeBuildTargetGroup)),
                 implementation => PlayerSettings.SetScriptingBackend(NamedBuildTarget.FromBuildTargetGroup(EditorUserBuildSettings.activeBuildTargetGroup), implementation.Value)),
 #else
-========
-#if UNITY_2021_1_OR_NEWER            
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.test-framework@1.3.7/UnityEditor.TestRunner/TestSettings/TestSettings.cs
             new TestSetting<ScriptingImplementation?>(
-                settings => settings.scriptingBackend,
-                () => PlayerSettings.GetScriptingBackend(NamedBuildTarget.FromBuildTargetGroup(EditorUserBuildSettings.activeBuildTargetGroup)),
-                implementation => PlayerSettings.SetScriptingBackend(NamedBuildTarget.FromBuildTargetGroup(EditorUserBuildSettings.activeBuildTargetGroup), implementation.Value)),
-#else
-            new TestSetting<ScriptingImplementation?>(            
                 settings => settings.scriptingBackend,
                 () => PlayerSettings.GetScriptingBackend(EditorUserBuildSettings.activeBuildTargetGroup),
                 implementation => PlayerSettings.SetScriptingBackend(EditorUserBuildSettings.activeBuildTargetGroup, implementation.Value)),
@@ -46,11 +37,7 @@ namespace UnityEditor.TestTools.TestRunner
                         }
                     }
                 }),
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.test-framework@1.3.8/UnityEditor.TestRunner/TestSettings/TestSettings.cs
 #if UNITY_2021_2_OR_NEWER
-========
-#if UNITY_2021_1_OR_NEWER            
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.test-framework@1.3.7/UnityEditor.TestRunner/TestSettings/TestSettings.cs
             new TestSetting<ApiCompatibilityLevel?>(
                 settings => settings.apiProfile,
                 () => PlayerSettings.GetApiCompatibilityLevel(NamedBuildTarget.FromBuildTargetGroup(EditorUserBuildSettings.activeBuildTargetGroup)),

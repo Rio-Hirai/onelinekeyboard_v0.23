@@ -1255,7 +1255,6 @@ Hide shelves
 == ShowShelvesViewTooltip ==
 Show the shelves view
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/plastic-gui.en.txt
 == NoShelvesCreatedExplanation ==
 There are no shelves created yet
 
@@ -1265,8 +1264,6 @@ There are no shelves that match your query
 == NoLocksCreatedExplanation ==
 There are no file locks created yet
 
-========
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/plastic-gui.en.txt
 == ShowLinkedTasksButton ==
 Show tasks
 
@@ -1515,7 +1512,6 @@ Deleting shelve...
 == DeletingShelvesPlural ==
 Deleting shelves...
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/plastic-gui.en.txt
 == RemovingLocksSingular ==
 Removing lock...
 
@@ -1528,8 +1524,6 @@ Releasing lock...
 == ReleasingLocksPlural ==
 Releasing locks...
 
-========
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/plastic-gui.en.txt
 == ApplyingShelve ==
 Applying shelve...
 
@@ -4020,12 +4014,9 @@ Toggle details
 == ShowDetails ==
 Show details
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/plastic-gui.en.txt
 == ShowLocks ==
 Show locks
 
-========
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/plastic-gui.en.txt
 == ToggleDetailsButtonTooltip ==
 Hide/show details area
 
@@ -7200,11 +7191,7 @@ Add a new Unity DevOps Version Control account
 Select a path
 
 == EmptyRepositoryHeader ==
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/plastic-gui.en.txt
 This repository is empty
-========
-This repository is still empty
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/plastic-gui.en.txt
 
 == WorkspaceNotOnDisk ==
 <not on disk>
@@ -7810,12 +7797,9 @@ Discover the new Code Review experience with multiple reviewers on the
 == UnityDashboard ==
 Unity Dashboard
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/plastic-gui.en.txt
 == WebAdmin ==
 Web Admin
 
-========
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/plastic-gui.en.txt
 == UserNotFoundSignUp ==
 User account not found.
 
@@ -7832,7 +7816,6 @@ More
 Signing in...
 
 == ShowEmbeddedShelveDiffTooltip ==
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/plastic-gui.en.txt
 Always open shelves in current window
 
 == EmptyLabelsMessage ==
@@ -7909,6 +7892,3 @@ Purged revision
 
 == PurgedRevisionMessage ==
 The content can't be displayed, this revision has been permanently deleted.
-========
-Always open shelves in current window
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/plastic-gui.en.txt
