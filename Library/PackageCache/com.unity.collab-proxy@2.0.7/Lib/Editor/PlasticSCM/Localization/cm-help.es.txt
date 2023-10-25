@@ -7760,14 +7760,6 @@ Opciones:
                        elemento al que apunta.
 
     --silent           No muestra salida.
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.es.txt
-========
-
-    --keepchanges (-k) Deshace la desprotección dejando los cambios locales.
-                       Ejemplo: un checkout lo deja como changed con el 
-                       contenido en disco que tenia antes de hacer el unco.
-                       Esta opción no puede utilizarse con workspaces dinámicos.
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.es.txt
 
     --keepchanges (-k) Deshace la desprotección dejando los cambios locales.
                        Ejemplo: un checkout lo deja como changed con el 
@@ -8069,24 +8061,10 @@ Sintaxis:
 == CMD_HELP_LOCK_UNLOCK ==
 Notas:
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.es.txt
     - Sólo el administrador del servidor puede ejecutar 'cm unlock --remove'
       para elminar bloqueos.
     - Sólo el administrador del servidor puede liberar bloqueos que pertenecen
       a otros usuarios. Cualquier usuario puede liberar su propios bloqueos.
-========
-    - El comando usa el servidor especificado para desbloquear los ítems.
-    - Si no se especifica ningún servidor, el comando intentará obtener un
-      servidor del espacio de trabajo actual.
-    - Si con los pasos anteriores no se pudo obtener ningún servidor, el comando
-      utilizará el servidor de la configuración actual del cliente de Unity VCS.
-    - Únicamente el administrador del servidor puede ejecutar el comando 'cm unlock'.
-    - Para especificar un GUID, indique los 32 dígitos separados por guiones con
-      el siguiente formato (y, opcionalmente, incluidos entre llaves):
-        {00000000-0000-0000-0000-000000000000}
-        o
-        00000000-0000-0000-0000-000000000000
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.es.txt
 
 Ejemplos:
 
@@ -9001,17 +8979,13 @@ Comandos:
     - execute
     - show
     - history
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.es.txt
     - unregister
-========
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.es.txt
 
     Para obtener más información sobre cada comando:
     cm purge <command> --^usage
     cm purge <command> --^help
 
 == CMD_HELP_PURGE ==
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.es.txt
 Examples:
 
     cm purge register ".mkv" "1955-Nov-05 6:00 AM" --repository=timemachine
@@ -9065,22 +9039,6 @@ Ejemplos:
 
     cm purge register ".mkv" "1955-Nov-05" ".mp3" "1955-Nov-12"
     (puede proporcionar varias parejas de extensión y fecha a la vez)
-========
-TO BE DONE
-
-== CMD_DESCRIPTION_PURGE_REGISTER ==
-Calcula y registra una acción de purga.
-
-Se considerarán candidatas para la purga aquellas revisiones anteriores a la(s) fecha(s) seleccionadas durante el registro. Como regla, siempre preservamos revisiones etiquetadas así como al menos una revisión en todas las cabezas de rama.
-
-Puede utilizar el comando "cm purge show" para verificar las revisiones seleccionadas antes de ejecutar la purga mediante el comando "cm purge execute".
-
-== CMD_USAGE_PURGE_REGISTER ==
-TO BE DONE
-
-== CMD_HELP_PURGE_REGISTER ==
-TO BE DONE
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.es.txt
 
 == CMD_DESCRIPTION_PURGE_EXECUTE ==
 Ejecuta una acción de purga registrada previamente.
@@ -9090,7 +9048,6 @@ ADVERTENCIA: Las acciones de purga son irreversibles. Una vez son ejecutadas, ya
 Asegúrese de comprobar la historia del fichero para confirmar cuáles de las revisiones/changesets no son relevantes. No dude en utilizar el comando "cm purge show" antes de ejecutar la purga para verificar que ninguna revisión inesperada esté seleccionada para su eliminación.
 
 == CMD_USAGE_PURGE_EXECUTE ==
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.es.txt
 Sintaxis:
     cm purge execute <purge_guid> [--server=<server>]
 
@@ -9205,27 +9162,3 @@ Ejemplos:
 
     cm purge unregister 545ec81b-23ea-462c-91f4-d7c62a6e8817 --server=myorg@cloud
     (puede especificar un servidor diferente para eliminar la purga de su registro)
-========
-TO BE DONE
-
-== CMD_HELP_PURGE_EXECUTE ==
-TO BE DONE
-
-== CMD_DESCRIPTION_PURGE_SHOW ==
-TO BE DONE
-
-== CMD_USAGE_PURGE_SHOW ==
-TO BE DONE
-
-== CMD_HELP_PURGE_SHOW ==
-TO BE DONE
-
-== CMD_DESCRIPTION_PURGE_HISTORY ==
-TO BE DONE
-
-== CMD_USAGE_PURGE_HISTORY ==
-TO BE DONE
-
-== CMD_HELP_PURGE_HISTORY ==
-TO BE DONE
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.es.txt

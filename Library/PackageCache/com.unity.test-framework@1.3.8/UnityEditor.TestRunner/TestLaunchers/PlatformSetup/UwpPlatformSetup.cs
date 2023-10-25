@@ -25,7 +25,6 @@ namespace UnityEditor.TestTools.TestRunner
             if (Environment.GetEnvironmentVariable("UNITY_THISISABUILDMACHINE") == "1" || wsaSettingNotInitialized)
             {
 #if UNITY_2023_1_OR_NEWER
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.test-framework@1.3.8/UnityEditor.TestRunner/TestLaunchers/PlatformSetup/UwpPlatformSetup.cs
 #else
                 EditorUserBuildSettings.wsaSubtarget = WSASubtarget.PC;
 #endif
@@ -34,16 +33,6 @@ namespace UnityEditor.TestTools.TestRunner
                 EditorUserBuildSettings.SetPlatformSettings(BuildPipeline.GetBuildTargetName(BuildTarget.WSAPlayer), k_SettingsBuildConfiguration, WSABuildType.Debug.ToString());
                 EditorUserBuildSettings.wsaUWPBuildType = WSAUWPBuildType.ExecutableOnly;
 #if UNITY_2021_2_OR_NEWER
-========
-#else 
-                EditorUserBuildSettings.wsaSubtarget = WSASubtarget.PC;
-#endif
-                
-                EditorUserBuildSettings.wsaArchitecture = "x64";
-                EditorUserBuildSettings.SetPlatformSettings(BuildPipeline.GetBuildTargetName(BuildTarget.WSAPlayer), k_SettingsBuildConfiguration, WSABuildType.Debug.ToString());
-                EditorUserBuildSettings.wsaUWPBuildType = WSAUWPBuildType.ExecutableOnly;
-#if UNITY_2021_1_OR_NEWER
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.test-framework@1.3.7/UnityEditor.TestRunner/TestLaunchers/PlatformSetup/UwpPlatformSetup.cs
                 PlayerSettings.SetIl2CppCompilerConfiguration(NamedBuildTarget.WindowsStoreApps, Il2CppCompilerConfiguration.Debug);
 #else
                 PlayerSettings.SetIl2CppCompilerConfiguration(BuildTargetGroup.WSA, Il2CppCompilerConfiguration.Debug);

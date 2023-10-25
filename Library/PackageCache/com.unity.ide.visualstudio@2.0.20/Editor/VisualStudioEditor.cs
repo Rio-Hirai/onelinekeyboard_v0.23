@@ -4,18 +4,13 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 using System;
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.ide.visualstudio@2.0.20/Editor/VisualStudioEditor.cs
 using System.Collections.Generic;
-========
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.ide.visualstudio@2.0.18/Editor/VisualStudioEditor.cs
 using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using UnityEditor;
 using UnityEngine;
 using Unity.CodeEditor;
-using System.Threading;
-using System.Collections.Concurrent;
 
 [assembly: InternalsVisibleTo("Unity.VisualStudio.EditorTests")]
 [assembly: InternalsVisibleTo("Unity.VisualStudio.Standalone.EditorTests")]
@@ -294,125 +289,10 @@ namespace Microsoft.Unity.VisualStudio.Editor
 			return false;
 		}
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.ide.visualstudio@2.0.20/Editor/VisualStudioEditor.cs
 		private static string GetOrGenerateSolutionFile(IGenerator generator)
 		{
 			generator.Sync();
 			return generator.SolutionFile();
-========
-		private enum COMIntegrationState
-		{
-			Running,
-			DisplayProgressBar,
-			ClearProgressBar,
-			Exited
-		}
-
-		private bool OpenWindowsApp(string path, int line)
-		{
-			var progpath = FileUtility.GetPackageAssetFullPath("Editor", "COMIntegration", "Release", "COMIntegration.exe");
-
-			if (string.IsNullOrWhiteSpace(progpath))
-				return false;
-
-			string absolutePath = "";
-			if (!string.IsNullOrWhiteSpace(path))
-			{
-				absolutePath = Path.GetFullPath(path);
-			}
-
-			// We remove all invalid chars from the solution filename, but we cannot prevent the user from using a specific path for the Unity project
-			// So process the fullpath to make it compatible with VS
-			var solution = GetOrGenerateSolutionFile(path);
-			if (!string.IsNullOrWhiteSpace(solution))
-			{
-				solution = $"\"{solution}\"";
-				solution = solution.Replace("^", "^^");
-			}
-
-			
-			var psi = ProcessRunner.ProcessStartInfoFor(progpath, $"\"{CodeEditor.CurrentEditorInstallation}\" {solution} \"{absolutePath}\" {line}");
-			psi.StandardOutputEncoding = System.Text.Encoding.Unicode;
-			psi.StandardErrorEncoding = System.Text.Encoding.Unicode;
-
-			// inter thread communication
-			var messages = new BlockingCollection<COMIntegrationState>();
-
-			var asyncStart = AsyncOperation<ProcessRunnerResult>.Run(
-				() => ProcessRunner.StartAndWaitForExit(psi, onOutputReceived: data => OnOutputReceived(data, messages)),
-				e => new ProcessRunnerResult {Success = false, Error = e.Message, Output = string.Empty},
-				() => messages.Add(COMIntegrationState.Exited)
-			);
-
-			MonitorCOMIntegration(messages);
-
-			var result = asyncStart.Result;
-
-			if (!result.Success && !string.IsNullOrWhiteSpace(result.Error))
-				Debug.LogError($"Error while starting Visual Studio: {result.Error}");
-
-			return result.Success;
-		}
-
-		private static void MonitorCOMIntegration(BlockingCollection<COMIntegrationState> messages)
-		{
-			var displayingProgress = false;
-			COMIntegrationState state;
-			
-			do
-			{
-				state = messages.Take();
-				switch (state)
-				{
-					case COMIntegrationState.ClearProgressBar:
-						EditorUtility.ClearProgressBar();
-						displayingProgress = false;
-						break;
-					case COMIntegrationState.DisplayProgressBar:
-						EditorUtility.DisplayProgressBar("Opening Visual Studio", "Starting up Visual Studio, this might take some time.", .5f);
-						displayingProgress = true;
-						break;
-				}
-			} while (state != COMIntegrationState.Exited);
-
-			// Make sure the progress bar is properly cleared in case of COMIntegration failure
-			if (displayingProgress)
-				EditorUtility.ClearProgressBar();
-		}
-		
-		private static readonly COMIntegrationState[] ProgressBarCommands = {COMIntegrationState.DisplayProgressBar, COMIntegrationState.ClearProgressBar};
-		private static void OnOutputReceived(string data, BlockingCollection<COMIntegrationState> messages)
-		{
-			if (data == null)
-				return;
-
-			foreach (var cmd in ProgressBarCommands)
-			{
-				if (data.IndexOf(cmd.ToString(), StringComparison.OrdinalIgnoreCase) >= 0)
-					messages.Add(cmd);
-			}
-		}
-
-		[DllImport("AppleEventIntegration")]
-		static extern bool OpenVisualStudio(string appPath, string solutionPath, string filePath, int line);
-
-		bool OpenOSXApp(string path, int line, int column)
-		{
-			string absolutePath = "";
-			if (!string.IsNullOrWhiteSpace(path))
-			{
-				absolutePath = Path.GetFullPath(path);
-			}
-
-			var solution = GetOrGenerateSolutionFile(path);
-			return OpenVisualStudio(CodeEditor.CurrentEditorInstallation, solution, absolutePath, line);
-		}
-
-		private string GetOrGenerateSolutionFile(string path)
-		{
-			_generator.Sync();
-			return _generator.SolutionFile();
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.ide.visualstudio@2.0.18/Editor/VisualStudioEditor.cs
 		}
 	}
 }

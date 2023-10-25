@@ -1813,11 +1813,7 @@ https://www.plasticscm.com/download/help/securityguide
     cm ^fileinfo proj_specs.docx --^fields=^ServerPath,^RevisionChangeset --^xml
     cm ^fileinfo samples.ogg --^format="{^ServerPath}[{^Owner}] -> {^Size}"
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.zh-Hant.txt
 == CMD_DESCRIPTION_FIND ==
-========
-== CMD_DESCRIPTION_FIND_QUERY ==
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.zh-Hant.txt
 執行類似 SQL 的查詢，以尋找 Unity VCS 物件。
 
 == CMD_USAGE_FIND ==

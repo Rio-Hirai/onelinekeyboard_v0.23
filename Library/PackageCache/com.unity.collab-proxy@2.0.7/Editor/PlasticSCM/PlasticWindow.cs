@@ -4,10 +4,6 @@ using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Editor/PlasticSCM/PlasticWindow.cs
-========
-using Codice.Client.BaseCommands.EventTracking;
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Editor/PlasticSCM/PlasticWindow.cs
 using Codice.Client.Common;
 using Codice.Client.Common.EventTracking;
 using Codice.Client.Common.FsNodeReaders.Watcher;

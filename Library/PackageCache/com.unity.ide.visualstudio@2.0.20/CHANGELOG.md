@@ -1,6 +1,5 @@
 # Code Editor Package for Visual Studio
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.ide.visualstudio@2.0.20/CHANGELOG.md
 ## [2.0.20] - 2023-06-27
 
 Integration:
@@ -21,8 +20,6 @@ Project generation:
 - Fix an issue related to missing properties with 2021.3.
 
 
-========
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.ide.visualstudio@2.0.18/CHANGELOG.md
 ## [2.0.18] - 2023-03-17
 
 Integration:
@@ -33,10 +30,6 @@ Project generation:
 
 - Add extra compiler options for analyzers and source generators.
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.ide.visualstudio@2.0.20/CHANGELOG.md
-========
-
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.ide.visualstudio@2.0.18/CHANGELOG.md
 ## [2.0.17] - 2022-12-06
 
 Integration:
@@ -50,10 +43,6 @@ Project generation:
 - Update supported C# versions.
 - Performance improvements.
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.ide.visualstudio@2.0.20/CHANGELOG.md
-========
-
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.ide.visualstudio@2.0.18/CHANGELOG.md
 ## [2.0.16] - 2022-06-08
 
 Integration:

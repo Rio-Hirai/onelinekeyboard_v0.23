@@ -58,19 +58,13 @@ namespace UnityEditor.TestTools.TestRunner
 
         public void Setup()
         {
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.test-framework@1.3.8/UnityEditor.TestRunner/TestLaunchers/PlatformSetup/AndroidPlatformSetup.cs
 #if UNITY_2021_2_OR_NEWER
             m_oldApplicationIdentifier = PlayerSettings.GetApplicationIdentifier(NamedBuildTarget.Android);
 #else
-========
-#if UNITY_2021_1_OR_NEWER            
-            m_oldApplicationIdentifier = PlayerSettings.GetApplicationIdentifier(NamedBuildTarget.Android);
-#else 
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.test-framework@1.3.7/UnityEditor.TestRunner/TestLaunchers/PlatformSetup/AndroidPlatformSetup.cs
             m_oldApplicationIdentifier = PlayerSettings.GetApplicationIdentifier(BuildTargetGroup.Android);
 #endif
             PlayerSettings.SetApplicationIdentifier(BuildTargetGroup.Android, "com.UnityTestRunner.UnityTestRunner");
-            
+
             if (RequiresLegacyConnectionMechanism)
                 PerformLegacySetup();
 
@@ -98,11 +92,7 @@ namespace UnityEditor.TestTools.TestRunner
         {
             if (RequiresLegacyConnectionMechanism)
                 PerformLegacyCleanup();
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.test-framework@1.3.8/UnityEditor.TestRunner/TestLaunchers/PlatformSetup/AndroidPlatformSetup.cs
 #if UNITY_2021_2_OR_NEWER
-========
-#if UNITY_2021_1_OR_NEWER 
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.test-framework@1.3.7/UnityEditor.TestRunner/TestLaunchers/PlatformSetup/AndroidPlatformSetup.cs
             PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android, m_oldApplicationIdentifier);
 #else
             PlayerSettings.SetApplicationIdentifier(BuildTargetGroup.Android, m_oldApplicationIdentifier);

@@ -496,7 +496,6 @@ namespace Unity.PlasticSCM.Editor.AssetUtils.Processor
                     WorkspaceTreeNode nodeMeta =
                         plasticApi.GetWorkspaceTreeNode(metaPath);
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Editor/PlasticSCM/AssetsUtils/Processor/WorkspaceOperationsMonitor.cs
                     if (node != null &&
                         !CheckWorkspaceTreeNodeStatus.IsCheckedOut(node) &&
                         ChangedFileChecker.IsChanged(node.LocalInfo, path, false))
@@ -505,14 +504,6 @@ namespace Unity.PlasticSCM.Editor.AssetUtils.Processor
                     if (nodeMeta != null &&
                         !CheckWorkspaceTreeNodeStatus.IsCheckedOut(nodeMeta) &&
                         ChangedFileChecker.IsChanged(nodeMeta.LocalInfo, metaPath, false))
-========
-                    if (node != null && ChangedFileChecker.IsChanged(
-                        node.LocalInfo, path, false))
-                        result.Add(path);
-
-                    if (nodeMeta != null && ChangedFileChecker.IsChanged(
-                        nodeMeta.LocalInfo, metaPath, false))
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Editor/PlasticSCM/AssetsUtils/Processor/WorkspaceOperationsMonitor.cs
                         result.Add(metaPath);
                 }
 

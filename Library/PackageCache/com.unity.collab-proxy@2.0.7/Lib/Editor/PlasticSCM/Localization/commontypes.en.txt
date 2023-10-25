@@ -766,11 +766,7 @@ Your auto-renewal license has been disabled by an administrator. Please contact 
 Can't use a {0} license with a {1} edition of Plastic SCM.
 
 == ListLocksByRepNotSupported ==
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/commontypes.en.txt
 The server {0} doesn't support listing locks by repository. Please upgrade the server to use Smart Locks feature.
-========
-The server {0} doesn't support listing locks by repository. Please upgrade the server.
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/commontypes.en.txt
 
 == LkNotFound ==
 Couldn't find a link of type {0}.
@@ -1082,12 +1078,9 @@ You don't have permissions to read the whole content inside the path '{0}' in th
 == PurgeCanOnlyBeExecutedByItsOwner ==
 Only the author can execute the purge.
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/commontypes.en.txt
 == PurgeCanOnlyBeDeletedByItsOwner ==
 Only the author or the administrator can delete the purge.
 
-========
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/commontypes.en.txt
 == PushAllNotAllowedWithMissingData ==
 Can't push the repository because the data of some of its revisions is missing (probably replicated with --nodata). Please hydrate the branches without data and try again (check the help of cm replicate hydrate).
 

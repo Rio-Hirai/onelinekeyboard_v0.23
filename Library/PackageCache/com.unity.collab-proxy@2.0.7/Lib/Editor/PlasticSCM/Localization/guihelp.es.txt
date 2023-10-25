@@ -508,11 +508,7 @@ fichero.
 == PlasticWkExplPendingChangesUnityFirstTime ==
 [title]Consejos útiles para trabajar con Unity[/title]
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/guihelp.es.txt
 * Configura el bloqueo. Es muy posible que quieras que los ficheros .prefabs estén bloqueados de manera exclusiva. Para ello, ve a [action:OpenLocksInDashboard]WebAdmin y configura los bloqueos[/action].
-========
-* Configura el bloqueo. Es muy posible que quieras que los ficheros .prefabs estén bloqueados de manera exclusiva. Para ello, ve a [action:WebAdminOpenInLocks]WebAdmin y configura los bloqueos[/action].
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/guihelp.es.txt
 * Usa checkouts (desprotecciones). Para bloquear un fichero tienes que hacer checkout: desproteger para editar. Desproteger es la acción de decirle a Unity VCS "Voy a modificar el fichero". Esta acción está disponible desde el menú contextual (clic derecho) de cada fichero.
 * Configura los ficheros a ignorar. Hay ficheros que no quieres añadir al control de versiones. [action:IgnoreConfCreateUnity]Haz clic aquí[/action] para crear el fichero ignore.conf para Unity. [link:https://plasticscm.com/download/help/ignored-hidden-etc] Lee más sobre cómo configurar el fichero ignore.conf[/link].
 

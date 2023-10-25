@@ -7,10 +7,7 @@ using UnityEngine;
 
 using Codice.Client.Commands;
 using Codice.Client.Common;
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Editor/PlasticSCM/Views/Changesets/ChangesetsTab.cs
 using Codice.Client.Common.EventTracking;
-========
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Editor/PlasticSCM/Views/Changesets/ChangesetsTab.cs
 using Codice.Client.Common.Threading;
 using Codice.CM.Common;
 using PlasticGui;

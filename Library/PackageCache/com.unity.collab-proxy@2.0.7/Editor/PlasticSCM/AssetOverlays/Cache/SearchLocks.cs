@@ -54,11 +54,7 @@ namespace Unity.PlasticSCM.Editor.AssetsOverlays.Cache
                 return;
 
             Dictionary<Guid, LockInfo> serverlocksByItem =
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Editor/PlasticSCM/AssetOverlays/Cache/SearchLocks.cs
                 ServerLocks.GetLocksForServerByItemGuid(
-========
-                ServerLocks.GetServerLocksByItem(
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Editor/PlasticSCM/AssetOverlays/Cache/SearchLocks.cs
                     repSpec.Server, locksByItemByServer);
 
             if (serverlocksByItem == null || serverlocksByItem.Count == 0)

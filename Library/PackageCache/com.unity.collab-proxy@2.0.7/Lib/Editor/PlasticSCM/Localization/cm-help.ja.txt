@@ -1813,11 +1813,7 @@ Git 高速エクスポートデータをリポジトリにインポートしま�
     cm ^fileinfo proj_specs.docx --^fields=^ServerPath,^RevisionChangeset --^xml
     cm ^fileinfo samples.ogg --^format="{^ServerPath}[{^Owner}] -> {^Size}"
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/cm-help.ja.txt
 == CMD_DESCRIPTION_FIND ==
-========
-== CMD_DESCRIPTION_FIND_QUERY ==
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/cm-help.ja.txt
 SQL のようなクエリを実行して Unity VCS のオブジェクトを探します。
 
 == CMD_USAGE_FIND ==

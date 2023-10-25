@@ -1,10 +1,7 @@
 # Changelog
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.test-framework@1.3.8/CHANGELOG.md
 ### [1.3.8] - 2023-07-05
 - Send new UTP messages regarding player and system settings (DSTR-831)
 
-========
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.test-framework@1.3.7/CHANGELOG.md
 ### [1.3.7] - 2023-06-07
 - The UTF version now automatically updates for SRP tests 
 

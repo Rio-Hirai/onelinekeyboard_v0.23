@@ -506,11 +506,7 @@ instead of merging files one by one.
 == PlasticWkExplPendingChangesUnityFirstTime ==
 [title]Useful tips to work with Unity[/title]
 
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.collab-proxy@2.0.7/Lib/Editor/PlasticSCM/Localization/guihelp.en.txt
 * Configure locking. Most likely you want the .prefabs to be exclusively locked. Go to the [action:OpenLocksInDashboard]WebAdmin and configure locks[/action].
-========
-* Configure locking. Most likely you want the .prefabs to be exclusively locked. Go to the [action:WebAdminOpenInLocks]WebAdmin and configure locks[/action].
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/Localization/guihelp.en.txt
 * Use checkouts. Locking requires that you checkout (lock) the files before editing. Checkout is the action to tell Unity VCS "I'm going to modify the file". It is available from the right-click menu of each file.
 * Configure the files to ignore. There are files that you don't want to add to version control. [action:IgnoreConfCreateUnity]Click here[/action] to create a ignore.conf for Unity. [link:https://plasticscm.com/download/help/ignored-hidden-etc]Learn more about ignore.conf[/link].
 

@@ -1,11 +1,6 @@
 fileFormatVersion: 2
-<<<<<<<< Updated upstream:Library/PackageCache/com.unity.ai.navigation@1.1.4/Samples~/NavigationSampleSettingsState.asset.meta
 guid: 609d2182df172eb43b6b754cc6dcabd2
 NativeFormatImporter:
-========
-guid: 2705889b3a9580a47b334f039bfdcb00
-TextScriptImporter:
->>>>>>>> Stashed changes:Library/PackageCache/com.unity.postprocessing@3.3.0/package.json.meta
   externalObjects: {}
   mainObjectFileID: 11400000
   userData: 
