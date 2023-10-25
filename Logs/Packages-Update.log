@@ -102,3 +102,11 @@ The following packages were 追加済:
   com.unity.analytics@3.8.1
   com.unity.purchasing@4.9.3
   com.unity.xr.legacyinputhelpers@2.1.10
+
+=== Wed Oct 25 21:58:21 2023
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were 更新済:
+  com.unity.collab-proxy をバージョン 2.1.0 から 2.2.0 へ

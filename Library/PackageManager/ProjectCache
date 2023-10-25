@@ -5,22 +5,22 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638338350538094428
-    m_Hash: 2079728198
+      ticks: 638338356667869437
+    m_Hash: 3136048343
   m_LockFileStatus:
     m_FilePath: D:/WORKSPACE_HDD/VR/onelinekeyboard_v0.23/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638338350632403303
-    m_Hash: 1592339813
+      ticks: 638338356668511756
+    m_Hash: 3794806638
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
 m_ProjectPath: D:/WORKSPACE_HDD/VR/onelinekeyboard_v0.23/Packages
-m_EditorVersion: 2023.1.10f1 (661833f8c66c)
+m_EditorVersion: 2023.1.18f1 (2b639e48c919)
 m_ResolvedPackages:
 - packageId: com.unity.2d.sprite@1.0.0
   testable: 0
@@ -332,7 +332,6 @@ m_ResolvedPackages:
     - 2.0.0-pre.4
     - 2.0.0
     compatible:
-    - 1.1.4
     - 1.1.5
     recommended: 1.1.5
     deprecated: []
@@ -364,7 +363,7 @@ m_ResolvedPackages:
     revision: a905e1ab41c8afae1a75688ceb3b4dfa1686ea75
     path: 
   unityLifecycle:
-    version: 1.1.4
+    version: 1.1.5
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -502,12 +501,12 @@ m_ResolvedPackages:
   upmReserved: 
   assetStore:
     productId: 
-- packageId: com.unity.collab-proxy@2.1.0
+- packageId: com.unity.collab-proxy@2.2.0
   testable: 0
   isDirectDependency: 1
-  version: 2.1.0
+  version: 2.2.0
   source: 1
-  resolvedPath: D:\WORKSPACE_HDD\VR\onelinekeyboard_v0.23\Library\PackageCache\com.unity.collab-proxy@2.1.0
+  resolvedPath: D:\WORKSPACE_HDD\VR\onelinekeyboard_v0.23\Library\PackageCache\com.unity.collab-proxy@2.2.0
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Version Control
@@ -519,7 +518,7 @@ m_ResolvedPackages:
   type: assets
   description: The package gives you the ability to use Unity Version Control in
     the Unity editor. To use Unity Version Control, a subscription is required. Learn
-    more about how you can get started for free by visiting plasticscm.com.
+    more about how you can get started for free by visiting https://unity.com/solutions/version-control
   status: 0
   errors: []
   versions:
@@ -595,13 +594,8 @@ m_ResolvedPackages:
     - 2.1.0
     - 2.2.0
     compatible:
-    - 2.0.7
-    - 2.1.0-preview.3
-    - 2.1.0-preview.5
-    - 2.1.0-preview.6
-    - 2.1.0
     - 2.2.0
-    recommended: 2.0.7
+    recommended: 2.2.0
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -632,16 +626,16 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638301329890000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.collab-proxy@2.1/manual/index.html
+  datePublishedTicks: 638326189440000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.collab-proxy@2.2/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
-    revision: 179e96acc2f95fcb9dcc91b5fb2ee5f3e85d48aa
+    revision: 33c8fba1793946be3c73f738edf70db0b5546afd
     path: 
   unityLifecycle:
-    version: 2.0.7
+    version: 2.2.0
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -659,13 +653,11 @@ m_ResolvedPackages:
     Asset Store Plug-In:\n\n- Select the PlasticSCM folder in the Assets\\Plugins
     folder on the Project tab, then click Edit > Delete\n- Close the Unity Editor
     and open your project again. You will find the Plastic SCM menu item in the Window
-    menu.\n\nChanged:\n\n- Moved the button to invite users to the organization from
-    the submenu to the toolbar.\n- Show a message with a link to invite users to
-    the organization after the first checkin.\n- Don''t write cloudProjectId in ProjectSettings.asset
-    anymore since it should only be managed by Services.\n- Added command to support
-    Hub creating a new project, and connecting a project to Unity Version Control.\n\nFixed:\n\n-
-    Fixed Add to ignored/hidden changes list from the Project window creating a negative
-    rule.\n- Fixed Switch to changeset not working on Gluon partial workspace."}'
+    menu.\n\n### Added\n\n- Added button for organization owner/admins to upgrade
+    to DevOps subscription.\n- Included new decorators for retained & locked files.\n\n###
+    Changed\n\n- Updated description in the package.json, including an updated link
+    to get started.\n\n### Fixed\n\n- Fixed failed operations when the workspace
+    is already locked."}'
   assetStore:
     productId: 
 - packageId: com.unity.feature.development@1.0.2
@@ -711,7 +703,7 @@ m_ResolvedPackages:
     version: default
   resolvedDependencies:
   - name: com.unity.ide.visualstudio
-    version: 2.0.21
+    version: 2.0.22
   - name: com.unity.test-framework
     version: 1.3.9
   - name: com.unity.ext.nunit
@@ -721,7 +713,7 @@ m_ResolvedPackages:
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.ide.rider
-    version: 3.0.25
+    version: 3.0.26
   - name: com.unity.editorcoroutines
     version: 1.0.0
   - name: com.unity.performance.profile-analyzer
@@ -765,12 +757,12 @@ m_ResolvedPackages:
   upmReserved: '{"quickstart":"https://docs.unity3d.com/2021.2/Documentation/Manual/DeveloperToolsFeature.html"}'
   assetStore:
     productId: 
-- packageId: com.unity.ide.rider@3.0.25
+- packageId: com.unity.ide.rider@3.0.26
   testable: 0
   isDirectDependency: 1
-  version: 3.0.25
+  version: 3.0.26
   source: 1
-  resolvedPath: D:\WORKSPACE_HDD\VR\onelinekeyboard_v0.23\Library\PackageCache\com.unity.ide.rider@3.0.25
+  resolvedPath: D:\WORKSPACE_HDD\VR\onelinekeyboard_v0.23\Library\PackageCache\com.unity.ide.rider@3.0.26
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -828,7 +820,6 @@ m_ResolvedPackages:
     - 3.0.25
     - 3.0.26
     compatible:
-    - 3.0.24
     - 3.0.25
     - 3.0.26
     recommended: 3.0.26
@@ -852,16 +843,16 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638300315270000000
+  datePublishedTicks: 638326061920000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.rider@3.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
-    revision: e103b4771a884e656407e1b7219e5e3c20222552
+    revision: 2b29b1152946c13d1ecebf6fc681a59cd8b4d399
     path: 
   unityLifecycle:
-    version: 3.0.24
+    version: 3.0.25
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -871,16 +862,16 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"- unification of functionality to  search JetBrains
-    installations and open solution and file in Rider"}'
+  upmReserved: '{"changelog":"- https://github.com/JetBrains/resharper-unity/issues/2421\n-
+    https://github.com/JetBrains/resharper-unity/issues/2422"}'
   assetStore:
     productId: 
-- packageId: com.unity.ide.visualstudio@2.0.21
+- packageId: com.unity.ide.visualstudio@2.0.22
   testable: 0
   isDirectDependency: 1
-  version: 2.0.21
+  version: 2.0.22
   source: 1
-  resolvedPath: D:\WORKSPACE_HDD\VR\onelinekeyboard_v0.23\Library\PackageCache\com.unity.ide.visualstudio@2.0.21
+  resolvedPath: D:\WORKSPACE_HDD\VR\onelinekeyboard_v0.23\Library\PackageCache\com.unity.ide.visualstudio@2.0.22
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -922,8 +913,6 @@ m_ResolvedPackages:
     - 2.0.21
     - 2.0.22
     compatible:
-    - 2.0.18
-    - 2.0.20
     - 2.0.21
     - 2.0.22
     recommended: 2.0.22
@@ -953,16 +942,16 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638300315250000000
+  datePublishedTicks: 638326061910000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.visualstudio@2.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
-    revision: eb2b500b99f6429d3d9dcb8acbcbd366dfbb42be
+    revision: 700b44077345e97d37d464ff25507638983aed64
     path: 
   unityLifecycle:
-    version: 2.0.18
+    version: 2.0.21
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -972,22 +961,20 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"Integration:\n\n- Only disable the legacy `com.unity.ide.vscode`
-    package going forward.\n- Fix json parsing issues with specific non-UTF code
-    pages.\n\nProject generation:\n\n- Target `netstandard2.1` instead of `netstandard2.0`.\n-
-    Set `defaultSolution` in `settings.json`.\n- Remove `files.exclude` entries for
-    root `csproj` and `sln` files in `settings.json` when needed.\n- Add `vstuc`
-    launch configuration to `launch.json` when needed.\n- Add `visualstudiotoolsforunity.vstuc`
-    entry to `extensions.json` when needed.\n- You can prevent the package from patching
-    those configuration files by creating a `.vscode/.vstupatchdisable` file."}'
+  upmReserved: '{"changelog":"Integration:\n\n- Add support for `XDG_DATA_DIRS` and
+    `.desktop` files on Linux for `VS Code` discovery.\n- Use compile-time platform-specifics
+    instead of using runtime conditions.\n\nProject generation:\n\n- Suppress `USG0001`
+    warnings.\n- Mark referenced assemblies as private (to not copy extra files to
+    output directory when building).\n- Add Unity capability to SDK-Style projects.\n-
+    Prevent circular dependency errors with SDK-Style projects."}'
   assetStore:
     productId: 
-- packageId: com.unity.purchasing@4.9.3
+- packageId: com.unity.purchasing@4.10.0
   testable: 0
   isDirectDependency: 1
-  version: 4.9.3
+  version: 4.10.0
   source: 1
-  resolvedPath: D:\WORKSPACE_HDD\VR\onelinekeyboard_v0.23\Library\PackageCache\com.unity.purchasing@4.9.3
+  resolvedPath: D:\WORKSPACE_HDD\VR\onelinekeyboard_v0.23\Library\PackageCache\com.unity.purchasing@4.10.0
   assetPath: Packages/com.unity.purchasing
   name: com.unity.purchasing
   displayName: In App Purchasing
@@ -1089,8 +1076,6 @@ m_ResolvedPackages:
   dependencies:
   - name: com.unity.ugui
     version: 1.0.0
-  - name: com.unity.modules.unityanalytics
-    version: 1.0.0
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
@@ -1098,15 +1083,13 @@ m_ResolvedPackages:
   - name: com.unity.modules.androidjni
     version: 1.0.0
   - name: com.unity.services.core
-    version: 1.8.1
+    version: 1.8.2
   resolvedDependencies:
   - name: com.unity.ugui
     version: 1.0.0
   - name: com.unity.modules.ui
     version: 1.0.0
   - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.unity.modules.unityanalytics
     version: 1.0.0
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
@@ -1134,13 +1117,13 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638223389530000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.purchasing@4.9/manual/index.html
+  datePublishedTicks: 638327851570000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.purchasing@4.10/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.purchasing.git
-    revision: 42718bbbc4b238be117b2c0c72c843152dffec63
+    revision: c1569b96eee83bd027cadf45a97ec73f6edf6661
     path: 
   unityLifecycle:
     version: 4.9.3
@@ -1155,19 +1138,29 @@ m_ResolvedPackages:
     revision: 
   upmReserved: '{"gameService":{"groupIndex":4,"groupName":"Monetize","configurePath":"Project/Services/In-App
     Purchasing","genericDashboardUrl":"https://dashboard.unity3d.com/","projectDashboardUrl":"https://dashboard.unity3d.com/organizations/{0}/projects/{1}/analytics/v2/dashboards/revenue","projectDashboardUrlType":"OrganizationKeyAndProjectGuid"},"supportedPlatforms":["Android","iOS"],"changelog":"###
-    Changed\n- Analytics events are now sent when a purchase has been confirmed (`ConfirmPendingTransaction`
-    or `ProcessPurchase` returning `PurchaseProcessingResult.Complete`). This will
-    improve the accuracy of revenue tracking by no longer considering pending purchases.\n-
-    Updated `Product.transactionID`, `Product.hasReceipt` and `Product.receipt` documentation
-    to include pending transaction use cases.\n- Updated samples to use `IDetailedStoreListener`
-    and its improved `OnPurchaseFailed` callback.\n- Added a new `RefreshAppReceipt(Action<string>
-    successCallback, Action<string> errorCallback)` callback containing more information
-    when the errorCallback is invoked in `IAppleExtensions : IStoreListener`.\n\n###
-    Fixed\n- `OnPurchaseFailed` will no longer log an error when there''s only new
-    IAP Buttons with no IAP Listener.\n- Apple - Improved the accuracy of `Product.appleProductIsRestored`
-    when using the restore transaction button. These will now correctly be flagged
-    as true.\n- Codeless - `OnPurchaseFailed(Product, PurchaseFailureDescription)`
-    callback was not invoked in `IAP Listener`"}'
+    Changed\n- Unity Distribution Portal - IAP will retract support for UDP at some
+    point in the near future (Announcement TBD). Until then, all UDP features will
+    continue to function, but the public interfaces, as well as some private functions
+    are now marked `[Obsolete]`. In the next major update these will all be removed
+    and UDP will cease to function with that version of In-App Purchasing and those
+    that follow.\n- Unity Distribution Portal - If the editor is unable to connect
+    to the UDP backend, the developer can now use some UDP catalog features in offline
+    mode. This allows the developer to continue to enter prices, meaning that prices
+    will need to be synced manually. In this case, we strongly suggest you sync your
+    prices properly once connection is re-established. A warning message will display
+    in the Catalog if the editor is unable to connect to the UDP backend.\n- Analytics
+    - The Legacy Analytics built-in module, com.unity.modules.unityanalytics, is
+    now no longer a dependency. You may not remove it from your project if you don''t
+    use it. Make sure it is in your project if you do use it.\n- Project Settings
+    - In the Services Project Settings page of the Editor, we have changed the endpoint
+    from which the Google Play Key is obtained. Also, instead of setting the key
+    directly in the editor, there is now a dashboard link to set it directly on the
+    backend to avoid future errors.\n\n### Fixed\n- Google Play - Some versions of
+    the Unity Editor compiler were stripping `GooglePurchaseUpdatedListener.onPurchasesUpdated`,
+    which was assigned as a callback to the Google Billing module, causing a lack
+    of purchase failure callbacks, and logging `\"No such proxy method:\"`. Also
+    fixed this for `BillingClientStateListener.onBillingServiceDisconnected`, `BillingClientStateListener.onBillingSetupFinished`
+    and `SkuDetailsResponseListener.onSkuDetailsResponse`."}'
   assetStore:
     productId: 
 - packageId: com.unity.test-framework@1.3.9
@@ -1238,8 +1231,6 @@ m_ResolvedPackages:
     - 2.0.1-pre.12
     - 2.0.1-pre.18
     compatible:
-    - 1.3.7
-    - 1.3.8
     - 1.3.9
     - 2.0.1-exp.1
     - 2.0.1-exp.2
@@ -1285,7 +1276,7 @@ m_ResolvedPackages:
     revision: 5c8a1448cee4d7607be0d60dceb66703b0cfe016
     path: 
   unityLifecycle:
-    version: 1.3.7
+    version: 1.3.9
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -1493,12 +1484,12 @@ m_ResolvedPackages:
   upmReserved: 
   assetStore:
     productId: 
-- packageId: com.unity.timeline@1.8.4
+- packageId: com.unity.timeline@1.8.6
   testable: 0
   isDirectDependency: 1
-  version: 1.8.4
+  version: 1.8.6
   source: 1
-  resolvedPath: D:\WORKSPACE_HDD\VR\onelinekeyboard_v0.23\Library\PackageCache\com.unity.timeline@1.8.4
+  resolvedPath: D:\WORKSPACE_HDD\VR\onelinekeyboard_v0.23\Library\PackageCache\com.unity.timeline@1.8.6
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -1643,13 +1634,13 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638229649630000000
+  datePublishedTicks: 638326112870000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.timeline@1.8/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.timeline.git
-    revision: 4c195c129dbdf32b664cf5288c6222f2d6f6c6f6
+    revision: 9b8cc7590b7d733181284f1a846a02406b5524d8
     path: 
   unityLifecycle:
     version: 1.8.2
@@ -1662,8 +1653,14 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Fixed\n\n- Fixed issue where exceptions were thrown
-    when different `ControlTrack`s are referencing the same `TimelineAsset` ([IN-21163](https://issuetracker.unity3d.com/product/unity/issues/guid/TB-165))."}'
+  upmReserved: '{"changelog":"### Changed\n\n- In the `Create Asset` menu, the `Signal`
+    and `Timeline` items have been moved to the `Timeline` submenu.\n\n### Fixed\n\n-
+    Fixed issue where changing the name of a group track was not undoable ([TB-218](https://issuetracker.unity3d.com/issues/timeline-track-group-renaming-doesnt-go-into-the-undo-history)).\n-
+    Fixed issue where a warning would be logged in the console for `TrackAsset` ([TB-229](https://issuetracker.unity3d.com/product/unity/issues/guid/TB-229)).\n-
+    Fixed performance regression when rebuilding the playable graph.\n- Fixed a `MissingReferenceException`
+    when editing a Timeline that is an instance of a prefab and a bound `Animator`
+    is destroyed ([TB-222](https://issuetracker.unity3d.com/issues/timeline-missingreferenceexceptions-when-undoing-add-animator-from-timeline))\n-
+    Removed warnings due to obsolete analytics API."}'
   assetStore:
     productId: 
 - packageId: com.unity.ugui@1.0.0
@@ -4213,7 +4210,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: assets
   description: 'This package defines common components used by multiple Game Service
     packages.
 
@@ -4241,9 +4238,16 @@ m_ResolvedPackages:
     - 1.5.2
     - 1.6.0
     - 1.7.0
+    - 1.7.1
+    - 1.8.1
+    - 1.8.2
+    - 1.9.0
+    - 1.10.1
     - 1.11.0
+    - 1.12.0
     compatible:
     - 1.11.0
+    - 1.12.0
     recommended: 1.11.0
     deprecated: []
   dependencies:
@@ -4271,9 +4275,9 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   entitlements:
-    licensingModel: 0
+    licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 638269929060000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.services.core@1.11/manual/index.html
   hasRepository: 1
   repository:
@@ -4740,6 +4744,8 @@ m_ResolvedPackages:
     - 2.0.2
     - 3.0.1
     - 3.0.2
+    - 3.1.0
+    - 3.2.0
     - 3.2.1
     compatible:
     - 3.2.1
@@ -4758,9 +4764,9 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   entitlements:
-    licensingModel: 0
+    licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 638186318800000000
   documentationUrl: 
   hasRepository: 1
   repository:
