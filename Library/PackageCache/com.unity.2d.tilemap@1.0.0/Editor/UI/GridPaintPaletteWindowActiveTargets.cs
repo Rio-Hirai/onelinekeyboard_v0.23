@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEditor.Toolbars;
 using UnityEngine.UIElements;
@@ -27,6 +28,21 @@ namespace UnityEditor.Tilemaps
 
         private readonly VisualElement m_CreateTargetElement;
 
+        private static string[] GetTilePaletteOverlayIds()
+        {
+            var types = TypeCache.GetTypesWithAttribute(typeof(TilePaletteOverlayToolbarElementAttribute));
+            var overlayIds = new string[types.Count];
+            var i = 0;
+            foreach (var type in types)
+            {
+                var toolbarElementAttribute = Attribute.GetCustomAttribute(type, typeof(EditorToolbarElementAttribute)) as EditorToolbarElementAttribute;
+                if (toolbarElementAttribute != null)
+                    overlayIds[i++] = toolbarElementAttribute.id;
+            }
+            Array.Resize(ref overlayIds, i);
+            return overlayIds;
+        }
+
         public GridPaintPaletteWindowActiveTargets()
         {
             AddToClassList(kUssClassName);
@@ -39,7 +55,7 @@ namespace UnityEditor.Tilemaps
             activeTargets.Add(new TilePaletteActiveTargetsPopupIcon());
             activeTargets.Add(new TilePaletteActiveTargetsPopup());
 
-            var rightToolbar = EditorToolbar.CreateOverlay(k_RightToolbarElements);
+            var rightToolbar = EditorToolbar.CreateOverlay(GetTilePaletteOverlayIds());
             rightToolbar.SetupChildrenAsButtonStrip();
             activeTargets.Add(rightToolbar);
             Add(activeTargets);

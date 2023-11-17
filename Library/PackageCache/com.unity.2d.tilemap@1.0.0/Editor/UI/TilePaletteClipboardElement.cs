@@ -41,6 +41,11 @@ namespace UnityEditor.Tilemaps
         }
 
         /// <summary>
+        /// The last active grid position on the clipboard.
+        /// </summary>
+        public Vector3Int clipboardMouseGridPosition => new Vector3Int(m_TilePaletteClipboard.mouseGridPosition.x, m_TilePaletteClipboard.mouseGridPosition.y, m_TilePaletteClipboard.zPosition);
+
+        /// <summary>
         /// Callback when the clipboard unlock status has changed
         /// </summary>
         public event Action<bool> clipboardUnlockedChanged;

@@ -9,7 +9,10 @@ using Event = UnityEngine.Event;
 
 namespace UnityEditor.Tilemaps
 {
-    internal class GridPaintPaletteWindow : EditorWindow
+    /// <summary>
+    /// EditorWindow containing the Tile Palette
+    /// </summary>
+    public class GridPaintPaletteWindow : EditorWindow, ISupportsOverlays
     {
         private static class Styles
         {
@@ -279,7 +282,8 @@ namespace UnityEditor.Tilemaps
         }
 
         private static List<GridPaintPaletteWindow> s_Instances;
-        public static List<GridPaintPaletteWindow> instances
+
+        private static List<GridPaintPaletteWindow> instances
         {
             get
             {
@@ -289,6 +293,9 @@ namespace UnityEditor.Tilemaps
             }
         }
 
+        /// <summary>
+        /// Whether the GridPaintPaletteWindow is active in the Editor
+        /// </summary>
         public static bool isActive
         {
             get
@@ -297,15 +304,15 @@ namespace UnityEditor.Tilemaps
             }
         }
 
-        public GameObject palette
+        internal GameObject palette
         {
             get => GridPaintingState.palette;
             set => GridPaintingState.palette = value;
         }
 
-        public GameObject paletteInstance => clipboardView.paletteInstance;
+        internal GameObject paletteInstance => clipboardView.paletteInstance;
 
-        public GridPaintPaletteClipboard clipboardView
+        internal GridPaintPaletteClipboard clipboardView
         {
             get => m_ClipboardSplitView.paletteElement.clipboardView;
         }
@@ -441,7 +448,7 @@ namespace UnityEditor.Tilemaps
             Selection.activeObject = clipboardView.activeTile;
         }
 
-        public void OnEnable()
+        internal void OnEnable()
         {
             instances.Add(this);
 
@@ -466,7 +473,7 @@ namespace UnityEditor.Tilemaps
             Repaint();
         }
 
-        public void OnDisable()
+        internal void OnDisable()
         {
             GridPaintingState.UnregisterPainterInterest(this);
 
@@ -546,8 +553,8 @@ namespace UnityEditor.Tilemaps
             GridPaintingState.lastActiveGrid.ResetZPosition();
         }
 
-        [MenuItem("Window/2D/Tile Palette", priority = 2)]
-        public static void OpenTilemapPalette()
+        [MenuItem("Window/2D/Tile Palette", false, 2)]
+        internal static void OpenTilemapPalette()
         {
             GridPaintPaletteWindow w = GetWindow<GridPaintPaletteWindow>();
             w.titleContent = Styles.tilePalette;

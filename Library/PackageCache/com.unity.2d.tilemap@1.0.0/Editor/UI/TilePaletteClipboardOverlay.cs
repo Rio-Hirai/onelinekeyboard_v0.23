@@ -110,6 +110,7 @@ namespace UnityEditor.Tilemaps
         }
     }
 
+    [TilePaletteOverlayToolbarElement]
     [EditorToolbarElement(k_ToolbarId)]
     internal class TilePaletteClipboardToggle : EditorToolbarToggle
     {

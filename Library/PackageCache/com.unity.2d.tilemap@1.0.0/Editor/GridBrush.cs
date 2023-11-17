@@ -185,7 +185,7 @@ namespace UnityEditor.Tilemaps
                 m_TileChangeDataList.Add(tcd);
                 count++;
             }
-            // Duplicate empty slots in the list, as ExtractArrayFromListT returns full list
+            // Duplicate empty slots in the list, as ExtractArrayFromList returns full list
             if (0 < count && count < listSize)
             {
                 var tcd = m_TileChangeDataList[count - 1];
@@ -194,7 +194,7 @@ namespace UnityEditor.Tilemaps
                     m_TileChangeDataList.Add(tcd);
                 }
             }
-            var tileChangeData = NoAllocHelpers.ExtractArrayFromListT(m_TileChangeDataList);
+            var tileChangeData = NoAllocHelpers.ExtractArrayFromList(m_TileChangeDataList);
             map.SetTiles(tileChangeData, false);
         }
 
@@ -220,7 +220,7 @@ namespace UnityEditor.Tilemaps
             {
                 m_TileChangeDataList.Add(new TileChangeData { position = location, tile = null, transform = identity, color = Color.white });
             }
-            var tileChangeData = NoAllocHelpers.ExtractArrayFromListT(m_TileChangeDataList);
+            var tileChangeData = NoAllocHelpers.ExtractArrayFromList(m_TileChangeDataList);
             map.SetTiles(tileChangeData, false);
         }
 
